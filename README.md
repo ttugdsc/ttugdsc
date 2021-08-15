@@ -1,4 +1,8 @@
-# ttugdsc
+# Texas Tech GDSC Website
+
+Here you can watch and even participate in the development on the TTU GDSC Website. Eventually, it'll be the single point of contact for the club. A one stop shop for our events, team, and projects.
+
+*To avoid unnecessary pain, we recommend reading up a bit or watching a bit on Vuejs and Nuxt.*
 
 ## Build Setup
 
