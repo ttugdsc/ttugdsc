@@ -4,6 +4,8 @@ Here you can watch and even participate in the development on the TTU GDSC Websi
 
 *To avoid unnecessary pain, we recommend reading up a bit or watching a bit on Vuejs and Nuxt.*
 
+For a breakdown on what we're shooting for, check out our [project page](https://www.figma.com/file/uEBOlD2GGmVO0sCAKTowAh/Lo-fi-Wireframe-Kit-Launchpad-for-Website-Wireframe) and our [discussion page](https://github.com/ttugdsc/ttugdsc/discussions).
+
 ## Build Setup
 
 ```bash
