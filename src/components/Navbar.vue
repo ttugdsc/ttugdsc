@@ -13,14 +13,14 @@ export default {
     return {
       navbarOptions: {
         brandImage: require("../assets/logo.png"),
-        brandImagePath: "../assets/logo.png",
+        brandImagePath: "/",
         brandImageAltText: "brand-image",
         collapseButtonOpenColor: "#661c23",
         collapseButtonCloseColor: "#661c23",
         ariaLabelMainNav: "Main Navigation",
         tooltipAnimationType: "shift-away",
         tooltipPlacement: "bottom",
-        menuOptionsLeft: [
+        menuOptionsRight: [
           {
             type: "link",
             text: "Home",

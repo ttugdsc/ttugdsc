@@ -1,9 +1,7 @@
 <template>
   <div class="layout">
     <header class="header">
-      <nav class="nav">
-        <Navbar />
-      </nav>
+      <Navbar />
     </header>
     <slot />
     <footer>
