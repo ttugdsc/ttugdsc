@@ -10,26 +10,23 @@
     </header>
     <v-main>
       <div class="pageContent">
-        <slot/> <!-- Page content will be inserted here -->
+        <slot />
       </div>
     </v-main>
-    <footer>
-    </footer>
+    <footer></footer>
   </v-app>
-</template>
-
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
-        logo: require('@/assets/logo.png')
-    }
-  }
-}
+      logo: require("@/assets/logo.png"),
+    };
+  },
+};
 </script>
 
 <style scoped>
-@import './Default.css';
+@import "./Default.css";
 </style>
