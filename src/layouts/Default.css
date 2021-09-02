@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+}
+.tabsWrapper {
+  color: primary;
+  height: 35px;
+
+  --slider-color: primary;
+}
+
+.pageContent {
+  padding: 100px 100px 100px 100px;
+}

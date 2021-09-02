@@ -6,6 +6,16 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = function (api) {
+  api.chainWebpack((config, { isServer }) => {
+    if (isServer) {
+      config.externals([
+        nodeExternals({
+          allowlist: [/^vuetify/]
+        })
+      ])
+    }
+  })
+  
   api.loadSource(({ addCollection }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
   })

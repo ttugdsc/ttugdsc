@@ -1,22 +1,35 @@
 <template>
-  <div class="layout">
+  <v-app>
     <header class="header">
-      <Navbar />
+      <v-img :src="logo" width="143px" contain></v-img>
+      <v-tabs grow class="tabsWrapper">
+        <v-tab to="/"> home </v-tab>
+        <v-tab to="/Projects"> projects </v-tab>
+        <v-tab to="/Events"> events </v-tab>
+      </v-tabs>
     </header>
-    <slot />
+    <v-main>
+      <div class="pageContent">
+        <slot/> <!-- Page content will be inserted here -->
+      </div>
+    </v-main>
     <footer>
-      <Footer />
     </footer>
-  </div>
+  </v-app>
+</template>
+
 </template>
 
 <script>
-import Navbar from '~/components/Navbar.vue'
 export default {
-  components: {
-    Navbar
+  data () {
+    return {
+        logo: require('@/assets/logo.png')
+    }
   }
 }
 </script>
 
-<style></style>
+<style scoped>
+@import './Default.css';
+</style>

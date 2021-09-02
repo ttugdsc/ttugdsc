@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0",
-    "vue-navigation-bar": "^4.1.0"
+    "vue-navigation-bar": "^4.1.0",
+    "vuetify": "^2.5.8"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
@@ -21,6 +22,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^7.17.0",
     "node-sass": "^6.0.1",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^10.1.1",
+    "webpack-node-externals": "^3.0.0"
   }
 }
