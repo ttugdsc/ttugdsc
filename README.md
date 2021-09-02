@@ -4,6 +4,8 @@ Here you can watch and even participate in the development on the TTU GDSC Websi
 
 _To avoid unnecessary pain, we recommend reading up a bit or watching a bit on Vuejs and Gridsome._
 
+If you want to contribute, follow [our guidelines](https://github.com/ttugdsc/ttugdsc/blob/main/CONTRIBUTION.md).
+
 For a breakdown on what we're shooting for, check out our [project page](https://www.figma.com/file/uEBOlD2GGmVO0sCAKTowAh/Lo-fi-Wireframe-Kit-Launchpad-for-Website-Wireframe) and our [discussion page](https://github.com/ttugdsc/ttugdsc/discussions).
 
 ### 1. Install yarn package manager if you don't have it yet
@@ -18,7 +20,7 @@ You can find it [here](https://yarnpkg.com/getting-started).
 
 ```bash
 # clone the repository
-git clone {insert-url-to-your-fork-here-without-curlies}
+git clone https://github.com/ttugdsc/ttugdsc
 
 # install dependencies
 $ cd ttugdsc
