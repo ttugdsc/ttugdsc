@@ -6,42 +6,42 @@
 </template>
 
 <script>
-import VueNavigationBar from 'vue-navigation-bar' // Documentation at https://github.com/johndatserakis/vue-navigation-bar
+import VueNavigationBar from "vue-navigation-bar"; // Documentation at https://github.com/johndatserakis/vue-navigation-bar
 
 export default {
   components: {
-    VueNavigationBar
+    VueNavigationBar,
   },
-  data () {
+  data() {
     return {
       navbarOptions: {
-        brandImage: require('../assets/logo.png'),
-        brandImagePath: '/',
-        brandImageAltText: 'brand-image',
-        collapseButtonOpenColor: '#661c23',
-        collapseButtonCloseColor: '#661c23',
-        ariaLabelMainNav: 'Main Navigation',
-        tooltipAnimationType: 'shift-away',
-        tooltipPlacement: 'bottom',
+        brandImage: require("../assets/logo.png"),
+        brandImagePath: "/",
+        brandImageAltText: "brand-image",
+        collapseButtonOpenColor: "#661c23",
+        collapseButtonCloseColor: "#661c23",
+        ariaLabelMainNav: "Main Navigation",
+        tooltipAnimationType: "shift-away",
+        tooltipPlacement: "bottom",
         menuOptionsRight: [
           {
-            type: 'link',
-            text: 'Home',
-            path: '/'
+            type: "link",
+            text: "Home",
+            path: "/",
           },
           {
-            type: 'link',
-            text: 'Projects',
-            path: '/projects'
+            type: "link",
+            text: "Projects",
+            path: "/projects",
           },
           {
-            type: 'link',
-            text: 'Events',
-            path: '/events'
-          }
-        ]
-      }
-    }
-  }
-}
+            type: "link",
+            text: "Events",
+            path: "/events",
+          },
+        ],
+      },
+    };
+  },
+};
 </script>

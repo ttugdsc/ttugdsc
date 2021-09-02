@@ -10,7 +10,7 @@
         </p>
         <v-btn
           block
-          color=primary
+          color="primary"
           outlined
           class="becomeAMemberBtn"
           href="https://gdsc.community.dev/texas-tech-university/"
@@ -62,94 +62,94 @@ export default {
   data() {
     return {
       socialBtnWrapperProps: {
-        target: '_blank',
-        class: 'socialBtnWrapper',
+        target: "_blank",
+        class: "socialBtnWrapper",
         plain: true,
       },
       avatarProps: {
-        size: '100',
+        size: "100",
       },
       socialBtns: [
         {
-          name: 'tectConnect',
-          link: 'https://ttu.campuslabs.com/engage/organization/dsc',
-          icon: 'mdi-format-title',
-          text: 'Tech Connect',
+          name: "tectConnect",
+          link: "https://ttu.campuslabs.com/engage/organization/dsc",
+          icon: "mdi-format-title",
+          text: "Tech Connect",
         },
         {
-          name: 'twitter',
-          link: 'https://twitter.com/ttugdsc',
-          icon: 'mdi-twitter',
-          text: 'Official DSC',
+          name: "twitter",
+          link: "https://twitter.com/ttugdsc",
+          icon: "mdi-twitter",
+          text: "Official DSC",
         },
         {
-          name: 'discord',
-          link: 'https://discord.gg/nTSWsXGNeQ',
-          icon: 'mdi-discord',
-          text: 'Discord',
+          name: "discord",
+          link: "https://discord.gg/nTSWsXGNeQ",
+          icon: "mdi-discord",
+          text: "Discord",
         },
         {
-          name: 'youtube',
-          link: 'https://www.youtube.com/channel/UCMjXs7pB9-E9wmpALv41aWg',
-          icon: 'mdi-youtube',
-          text: 'Developer Student Clubs TTU',
+          name: "youtube",
+          link: "https://www.youtube.com/channel/UCMjXs7pB9-E9wmpALv41aWg",
+          icon: "mdi-youtube",
+          text: "Developer Student Clubs TTU",
         },
         {
-          name: 'github',
-          link: 'https://github.com/ttugdsc',
-          icon: 'mdi-github',
-          text: 'GitHub',
+          name: "github",
+          link: "https://github.com/ttugdsc",
+          icon: "mdi-github",
+          text: "GitHub",
         },
       ],
       avatars: [
         {
-          name: 'teamMember1',
-          class: 'topTeamImg',
-          img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Team Lead Placeholder Name',
+          name: "teamMember1",
+          class: "topTeamImg",
+          img: "https://i.imgur.com/escfpv7.png",
+          text: "Team Lead Placeholder Name",
         },
         {
-          name: 'teamMember2',
-          class: 'bottomTeamImg',
-          img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Sponsorship Placeholder Name',
+          name: "teamMember2",
+          class: "bottomTeamImg",
+          img: "https://i.imgur.com/escfpv7.png",
+          text: "Sponsorship Placeholder Name",
         },
         {
-          name: 'teamMember3',
-          class: 'topTeamImg',
-          img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Markteting Placeholder Name',
+          name: "teamMember3",
+          class: "topTeamImg",
+          img: "https://i.imgur.com/escfpv7.png",
+          text: "Markteting Placeholder Name",
         },
         {
-          name: 'teamMember4',
-          class: 'bottomTeamImg',
-          img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Logistics Placeholder Name',
+          name: "teamMember4",
+          class: "bottomTeamImg",
+          img: "https://i.imgur.com/escfpv7.png",
+          text: "Logistics Placeholder Name",
         },
         {
-          name: 'teamMember5',
-          class: 'topTeamImg',
-          img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Finance Placeholder Name',
+          name: "teamMember5",
+          class: "topTeamImg",
+          img: "https://i.imgur.com/escfpv7.png",
+          text: "Finance Placeholder Name",
         },
         {
-          name: 'teamMember6',
-          class: 'bottomTeamImg',
-          img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Member Experience Placeholder Name',
+          name: "teamMember6",
+          class: "bottomTeamImg",
+          img: "https://i.imgur.com/escfpv7.png",
+          text: "Member Experience Placeholder Name",
         },
         {
-          name: 'teamMember7',
-          class: 'topTeamImg',
-          img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Logistics Placeholder Name',
+          name: "teamMember7",
+          class: "topTeamImg",
+          img: "https://i.imgur.com/escfpv7.png",
+          text: "Logistics Placeholder Name",
         },
       ],
-    }
+    };
   },
-}
+};
 </script>
 
 <style scoped>
-@import './Index.css';
+@import "./Index.css";
 </style>

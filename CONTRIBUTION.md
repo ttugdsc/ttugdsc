@@ -61,5 +61,7 @@ Don't be afraid to ask for help when you're lost, that's literally the point of 
 Ask your questions in the issue you're working on or into the discussion section if there's no attached issue.
 
 ### Happy coding 🎉🙌 and welcome to the TTU GDSC
+
 ![]()
+
 <div alt="GDSC Logo" style="text-align:center"><img src="http://dscgt.club/images/dsc-logo-2.png" /></div>
