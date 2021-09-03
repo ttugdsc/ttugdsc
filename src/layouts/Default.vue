@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <header class="header">
-      <v-img :src="logo" width="143px" contain></v-img>
+      <div class="logoWrapper">
+        <img class="logo" src="../assets/logo.png"/>
+      </div>
       <v-tabs grow class="tabsWrapper">
         <v-tab to="/"> home </v-tab>
         <v-tab to="/Projects"> projects </v-tab>
@@ -18,13 +20,7 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      logo: require("@/assets/logo.png"),
-    };
-  },
-};
+export default {};
 </script>
 
 <style scoped>

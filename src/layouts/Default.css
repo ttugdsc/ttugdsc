@@ -13,3 +13,13 @@
 .pageContent {
   padding: 100px 100px 100px 100px;
 }
+
+.logoWrapper {
+  min-width: 143px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  max-width:143px;
+}

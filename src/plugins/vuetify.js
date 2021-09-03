@@ -1,14 +1,14 @@
-import Vue from "vue";
-import Vuetify from "vuetify/lib";
+import Vue from 'vue'
+import Vuetify from 'vuetify/lib'
 
-Vue.use(Vuetify);
+Vue.use(Vuetify)
 
 export default new Vuetify({
   theme: {
     themes: {
       light: {
-        primary: "#074EE8",
-      },
-    },
-  },
-});
+        primary: '#074EE8'
+      }
+    }
+  }
+})

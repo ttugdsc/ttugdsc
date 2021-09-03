@@ -19,10 +19,10 @@
           Become a Member!
         </v-btn>
       </div>
-      <v-img
+      <img
         src="https://i.imgur.com/escfpv7.png"
         class="studentsTalkingImg"
-      ></v-img>
+      />
     </div>
     <div class="homeBodyWrapper">
       <div class="bodyText">
