@@ -51,7 +51,7 @@ img {
 .row {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    gap: 20px
+    gap: 20px;
 }
 
 .center-vertical {
@@ -104,7 +104,7 @@ img {
 .col-11-sm { grid-column: span 11; }
 .col-12-sm { grid-column: span 12; }
 
-@media only screen and (min-width: $breakpoint-med) {
+@media only screen and (min-width: $bp-md) {
     .col-1 { grid-column: span 1; }
     .col-2 { grid-column: span 2; }
     .col-3 { grid-column: span 3; }

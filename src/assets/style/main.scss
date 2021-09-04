@@ -38,6 +38,64 @@ body {
   margin: auto;
 }
 
-.officerAvatar {
+.OfficerGrid {
+  display: grid;
+  grid-template-columns: repeat(7,auto);
+  grid-template-rows: repeat(2,auto);
+}
+
+.OfficerAvatar {
+  padding: 10px;
   display: flex;
+  align-items: center;
+}
+
+.OfficerImage {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 100%;
+  margin-right: 30px;
+}
+
+.OfficerItem {
+  grid-column: span 4;
+  margin-left: 10vw;
+}
+
+@media screen and (min-width: $bp-sm) {
+  .OfficerItem {
+    grid-column: span 3;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: $bp-md) {
+  .OfficerItem {
+    grid-column: span 1;
+    max-width: 10vw;
+    height: 16vh;
+  }
+
+  .OfficerAvatar {
+      flex-direction: column;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 25vw;
+  }
+
+  .top {
+    justify-content: flex-start !important;
+  }
+
+  .bottom {
+    justify-content: flex-end !important;
+  }
+
+  .OfficerImage {
+    width: 10vw;
+    height: 10vw;
+    margin-right: 0;
+  }
 }

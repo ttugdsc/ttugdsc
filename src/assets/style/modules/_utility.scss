@@ -43,6 +43,40 @@ $margin-values: (
     }
 }
 
+//Generates Margin Utility Classes
+@each $value,$size in $margin-values {
+    .m-#{$value}-sm {
+        margin: $size;
+    }
+
+    .mt-#{$value}-sm {
+        margin-top: $size;
+    }
+
+    .mb-#{$value}-sm {
+        margin-bottom: $size;
+    }
+
+    .ml-#{$value}-sm {
+        margin-left: $size;
+    }
+
+    .mr-#{$value}-sm {
+        margin-right: $size;
+    }
+
+    .my-#{$value}-sm {
+        margin-top: $size;
+        margin-bottom: $size;
+    }
+
+    .mx-#{$value}-sm {
+        margin-left: $size;
+        margin-right: $size;   
+    }
+}
+
+
 //Generates Padding Utility Classes
 @each $value,$size in $margin-values {
     .p-#{$value} {
@@ -76,6 +110,104 @@ $margin-values: (
     }
 }
 
+@each $value,$size in $margin-values {
+    .p-#{$value}-sm {
+        padding: $size;
+    }
+
+    .pt-#{$value}-sm {
+        padding-top: $size;
+    }
+
+    .pb-#{$value}-sm {
+        padding-bottom: $size;
+    }
+
+    .pl-#{$value}-sm {
+        padding-left: $size;
+    }
+
+    .pr-#{$value}-sm {
+        padding-right: $size;
+    }
+
+    .py-#{$value}-sm {
+        padding-top: $size;
+        padding-bottom: $size;
+    }
+
+    .px-#{$value}-sm {
+        padding-left: $size;
+        padding-right: $size;   
+    }
+}
+
+@media only screen and (min-width: $breakpoint-med) {
+    @each $value,$size in $margin-values {
+        .m-#{$value}-sm {
+            margin: 0;
+        }
+    
+        .mt-#{$value}-sm {
+            margin-top: 0;
+        }
+    
+        .mb-#{$value}-sm {
+            margin-bottom: 0;
+        }
+    
+        .ml-#{$value}-sm {
+            margin-left: 0;
+        }
+    
+        .mr-#{$value}-sm {
+            margin-right: 0;
+        }
+    
+        .my-#{$value}-sm {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    
+        .mx-#{$value}-sm {
+            margin-left: 0;
+            margin-right: 0;   
+        }
+    }
+    
+
+    @each $value,$size in $margin-values {
+        .p-#{$value}-sm {
+            padding: 0;
+        }
+    
+        .pt-#{$value}-sm {
+            padding-top: 0;
+        }
+    
+        .pb-#{$value}-sm {
+            padding-bottom: 0;
+        }
+    
+        .pl-#{$value}-sm {
+            padding-left: 0;
+        }
+    
+        .pr-#{$value}-sm {
+            padding-right: 0;
+        }
+    
+        .py-#{$value}-sm {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    
+        .px-#{$value}-sm {
+            padding-left: 0;
+            padding-right: 0;   
+        }
+    }
+}
 
 .img-responsive {
     max-width: 100%;

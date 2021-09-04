@@ -1,17 +1,23 @@
 <template>
-    <div class="officerAvatar">
-        <g-image class="officerImage" :src="imgsrc" />
-        <p>{{officername}}<br/>{{title}}</p>
-    </div>
+  <div
+    :class="float + ' OfficerAvatar'"
+  >
+    <g-image
+      class="OfficerImage"
+      :src="imgsrc"
+    />
+    <p>{{ officername }}<br>{{ title }}</p>
+  </div>
 </template>
 
 <script>
 export default {
-    name: "Avatar",
-    props: [
-        'title',
-        'imgsrc',
-        'officername'
-    ]
+  name: 'Avatar',
+  props: [
+    'title',
+    'imgsrc',
+    'officername',
+    'float'
+  ]
 }
 </script>
