@@ -151,5 +151,5 @@ export default {
 </script>
 
 <style scoped>
-@import "./Index.css";
+@import "../assets/Index.css";
 </style>
