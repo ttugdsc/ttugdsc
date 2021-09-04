@@ -22,11 +22,7 @@
         </v-tab>
       </v-tabs>
     </header>
-    <v-main>
-      <div class="pageContent">
-        <slot />
-      </div>
-    </v-main>
+    <slot/>
     <footer />
   </v-app>
 </template>

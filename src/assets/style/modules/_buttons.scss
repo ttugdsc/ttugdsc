@@ -1,8 +1,11 @@
+@import 'variables';
+
 $button-text-color: white;
-$button-bg-color: blue;
+$button-bg-color: #1a73e8;
 
 
 .btn {
+    font-weight: 500;
     border: none;
     border-radius: 2px;
     display: inline-block;
@@ -14,39 +17,73 @@ $button-bg-color: blue;
     -webkit-tap-highlight-color: transparent;
 }
 
-
 .btn,
 .btn-lg {
     text-decoration: none;
     color: $button-text-color;
-    background-color: $button-bg-color;
+    background-color: $devclub-blue;
     text-align: center;
     letter-spacing: .5px;
-    transition: background-color .2s ease-out;
+    -webkit-transition: background-color .2s,border .2s,box-shadow .2s;
+    transition: background-color .2s,border .2s,box-shadow .2s;
     cursor: pointer;
     &:hover {
-        background-color: lighten($button-bg-color, 10%) ;
+        background-color: $devclub-blue-hover;
+        box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 1px 3px 1px rgba(60,64,67,0.15);
     }
 }
 
+.btn-social {
+    height: 36px;
+    display: flex;
+    flex: 1 0 auto;
+    font-size:.875rem;
+    font-weight: 500;
+    letter-spacing: .0892857143em;
+    align-items: center;
+    color: gray;
+    -webkit-transition: background-color .2s,border .2s,box-shadow .2s;
+    transition: background-color .2s,border .2s,box-shadow .2s;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 1px;
+    &:hover {
+        color: black;
+        background-color: #eeeeee;
+        box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 1px 3px 1px rgba(60,64,67,0.15);
+    }
+}
+
+.btn-social > span {
+    font-size: 24px;
+    padding-right: 1rem;
+}
 
 .btn-outline,
 .btn-outline-lg {
     @extend .btn;
-    color: $button-bg-color;
+    color: $devclub-blue;
     background-color: transparent;
     transition: none;
-    border: 1.5px solid $button-bg-color;
+    border: 1px solid #dadce0;
     transition: background-color .2s ease-out;
     &:hover {
-        background-color: $button-bg-color;
-        color: white;
-        border: 1.5px solid transparent;
+        background-color: #e8f0fe;
+        border: 1px solid #d2e3fc;
+        box-shadow: none;
     }
 }   
 
+.btn-lg {
+    @extend .btn
+}
 
-.btn-lg, .btn-outline-lg {
+
+.btn-lg, 
+.btn-outline-lg {
     width: 80%;
     display: inline-block;
     margin-left: auto;

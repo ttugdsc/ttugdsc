@@ -41,6 +41,13 @@ img {
     } 
 }
 
+
+.container-full {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .row {
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -49,11 +56,25 @@ img {
 
 .center-vertical {
     display: flex;
-    align-items: center;
+    //align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 100%;
 }
+
+.hidden-sm {
+  display: none;
+}
+
+.sm-only {
+  display: block;
+}
+
+//This sets the column to appear first at smaller breakpoints
+.first-sm {
+  grid-row: 1;
+}
+
 
 .col-1,
 .col-2,
@@ -100,5 +121,15 @@ img {
     .hidden-sm {
       display: block;
     }
+
+    .first-sm {
+      grid-row: auto;
+    }
+
+    .sm-only {
+      display: none;
+    }
   }
   
+
+

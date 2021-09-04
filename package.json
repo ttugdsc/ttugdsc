@@ -11,8 +11,7 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0",
-    "vue-navigation-bar": "^4.1.0",
-    "vuetify": "^2.5.8"
+    "vue-navigation-bar": "^4.1.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
