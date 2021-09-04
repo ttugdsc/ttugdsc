@@ -1,7 +1,7 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
-
-// import '~/assets/styles.scss'
+ 
+import '~/assets/style/main.scss'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import DefaultLayout from '~/layouts/Default.vue'
@@ -18,9 +18,9 @@ export default function (Vue, { appOptions, head }) {
   })
 
   const opts = {} // opts includes, vuetify themes, icons, etc.
-  Vue.use(Vuetify)
+ // Vue.use(Vuetify)
 
-  appOptions.vuetify = new Vuetify(opts)
+ // appOptions.vuetify = new Vuetify(opts)
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)

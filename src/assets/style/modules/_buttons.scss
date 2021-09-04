@@ -1,0 +1,55 @@
+$button-text-color: white;
+$button-bg-color: blue;
+
+
+.btn {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.btn,
+.btn-lg {
+    text-decoration: none;
+    color: $button-text-color;
+    background-color: $button-bg-color;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+    &:hover {
+        background-color: lighten($button-bg-color, 10%) ;
+    }
+}
+
+
+.btn-outline,
+.btn-outline-lg {
+    @extend .btn;
+    color: $button-bg-color;
+    background-color: transparent;
+    transition: none;
+    border: 1.5px solid $button-bg-color;
+    transition: background-color .2s ease-out;
+    &:hover {
+        background-color: $button-bg-color;
+        color: white;
+        border: 1.5px solid transparent;
+    }
+}   
+
+
+.btn-lg, .btn-outline-lg {
+    width: 80%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 0px 10px 0px;
+}

@@ -1,0 +1,104 @@
+// grid
+
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-med: 45em; // 720px
+$breakpoint-large: 60em; // 960px
+$breakpoint-xl: 75em;
+
+
+//These breakpoints are borrowed from bootstrap
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+//This is the wrapper for the layout
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  
+    @media only screen and (min-width: $bp-sm) {
+      max-width: 540px;
+    }
+
+    @media only screen and (min-width: $bp-md) {
+        max-width: 720px;
+    }
+  
+    @media only screen and (min-width: $bp-lg) {
+      max-width: 960px;
+    }
+
+    @media only screen and (min-width: $bp-xl ) {
+        max-width: 1140px;      
+    } 
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 20px
+}
+
+.center-vertical {
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  grid-column: span 12;
+}
+
+.col-1-sm { grid-column: span 1; }
+.col-2-sm { grid-column: span 2; }
+.col-3-sm { grid-column: span 3; }
+.col-4-sm { grid-column: span 4; }
+.col-5-sm { grid-column: span 5; }
+.col-6-sm { grid-column: span 6; }
+.col-7-sm { grid-column: span 7; }
+.col-8-sm { grid-column: span 8; }
+.col-9-sm { grid-column: span 9; }
+.col-10-sm { grid-column: span 10; }
+.col-11-sm { grid-column: span 11; }
+.col-12-sm { grid-column: span 12; }
+
+@media only screen and (min-width: $breakpoint-med) {
+    .col-1 { grid-column: span 1; }
+    .col-2 { grid-column: span 2; }
+    .col-3 { grid-column: span 3; }
+    .col-4 { grid-column: span 4; }
+    .col-5 { grid-column: span 5; }
+    .col-6 { grid-column: span 6; }
+    .col-7 { grid-column: span 7; }
+    .col-8 { grid-column: span 8; }
+    .col-9 { grid-column: span 9; }
+    .col-10 { grid-column: span 10; }
+    .col-11 { grid-column: span 11; }
+    .col-12 { grid-column: span 12; }
+  
+    .hidden-sm {
+      display: block;
+    }
+  }
+  
