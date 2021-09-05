@@ -14,6 +14,8 @@ $button-text-color: white;
     text-transform: uppercase;
     vertical-align: middle;
     -webkit-tap-highlight-color: transparent;
+
+    
 }
 
 .btn,
@@ -26,6 +28,52 @@ $button-text-color: white;
     -webkit-transition: background-color .2s,border .2s,box-shadow .2s;
     transition: background-color .2s,border .2s,box-shadow .2s;
     cursor: pointer;
+
+    &.red {
+        background-color: $devclub-red;
+        color: white;
+
+        &:hover {
+           background-color: $devclub-red-hover; 
+        }
+    }
+
+    &.yellow {
+        background-color: $devclub-yellow;
+        color: $devclub-font-color;
+
+        &:hover {
+           background-color: $devclub-yellow-hover; 
+        }
+    }
+
+    &.green {
+        background-color: $devclub-green;
+        color: white;
+
+        &:hover {
+           background-color: $devclub-green-hover; 
+        }
+    }
+
+    &.black {
+        background-color: $devclub-font-color;
+        color: white;
+
+        &:hover {
+            background-color: lighten($devclub-font-color,5%);
+        }
+    }
+
+    &.white {
+        background-color: #efefef;
+        color: $devclub-font-color;
+
+        &:hover {
+            background-color: darken(#efefef,5%);
+        }
+    }
+
     &:hover {
         background-color: $devclub-primary-hover;
         box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 1px 3px 1px rgba(60,64,67,0.15);
@@ -48,7 +96,7 @@ $button-text-color: white;
     background-color: white;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    border-radius: 1px;
+    border-radius: 5px;
     &:hover {
         color: black;
         background-color: #eeeeee;
@@ -69,11 +117,75 @@ $button-text-color: white;
     transition: none;
     border: 1px solid #dadce0;
     transition: background-color .2s ease-out;
-    &:hover {
+    
+    &.red {
+        background-color: transparent;
+        color: $devclub-red;
+        
+
+        &:hover,
+        &:active {
+           background-color: lighten($devclub-red,40%); 
+           border: 1px solid lighten($devclub-red,30%);
+        }
+    }
+
+    &.yellow {
+        background-color: transparent;
+        color: $devclub-yellow;
+        
+
+        &:hover,
+        &:active {
+           background-color: lighten($devclub-yellow,40%); 
+           border: 1px solid lighten($devclub-yellow,30%);
+        }
+    }
+
+    &.green {
+        background-color: transparent;
+        color: $devclub-green;
+        
+
+        &:hover,
+        &:active {
+           background-color: lighten($devclub-green,40%); 
+           border: 1px solid lighten($devclub-green,30%);
+        }
+    }
+
+    &.black {
+        background-color: transparent;
+        color: $devclub-font-color;
+        
+
+        &:hover,
+        &:active {
+           background-color: lighten($devclub-font-color,40%); 
+           border: 1px solid lighten($devclub-font-color,30%);
+           color: white;
+        }
+    }
+
+    &.white {
+        background-color: transparent;
+        color: white;
+        
+
+        &:hover,
+        &:active {
+           background-color: darken(white,40%); 
+           border: 1px solid darken(white,30%);
+        }
+    }
+
+    &:hover,
+    &:active {
         background-color: #e8f0fe;
         border: 1px solid #d2e3fc;
         box-shadow: none;
     }
+
 }   
 
 .btn-lg {

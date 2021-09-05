@@ -103,6 +103,40 @@ For example:
 
 Make sure you test your site at all breakpoints to make sure it looks good, and adjust the columns and classes accordingly.
 
+## Buttons
+To make a button, apply the `btn` class to an anchor element, like this:
+```html
+<a class='btn' href='/'>Button Text</a>
+```
+
+### Normal Buttons
+The syntax for a normal button is:
+```html
+<a class='btn {?color}' href='/'>Button Text</a>
+```
+1. {color}: This is the color of the background of the button you can use any of the color defined [here](###Color-Utilities), if you dont specify a color, it will default to blue.
+
+### Outlined Buttons
+The syntax for a normal button is:
+```html
+<a class='btn-outline {?color}' href='/'>Button Text</a>
+```
+1. {color}: This is the color of the text and outline of the button you can use any of the color defined [here](###Color-Utilities), if you dont specify a color, it will default to blue.
+
+### Block Buttons
+The syntax for a normal button is:
+```html
+<a class='btn-lg {?color}' href='/'>Button Text</a>
+```
+1. {color}: This is the color of the text and outline of the button you can use any of the color defined [here](###Color-Utilities), if you dont specify a color, it will default to blue.
+
+### Outlined Block Buttons
+The syntax for a normal button is:
+```html
+<a class='btn-outline-lg {?color}' href='/'>Button Text</a>
+```
+1. {color}: This is the color of the text and outline of the button you can use any of the color defined [here](###Color-Utilities), if you dont specify a color, it will default to blue.
+
 ## Utility Classes
 There is also a variety of CSS classes you can use to accomplish basic styling.
 

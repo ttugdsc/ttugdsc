@@ -36,7 +36,7 @@
           <div
             class="row px-2-sm"
           >
-            <div class="col-8 center-vertical">
+            <div class="col-8 white center-vertical">
               <h3>Our Goal</h3>
               <p class="white">
                 Who we are and what we do ~~~ Lorem ipsum dolor sit amet, consec
@@ -46,7 +46,7 @@
               </p>
             </div>
             <div class="col-4">
-              <h3 class="sm-only">
+              <h3 class="sm-only white">
                 Follow Us
               </h3>
               <div
@@ -119,31 +119,31 @@ export default {
         {
           name: 'tectConnect',
           link: 'https://ttu.campuslabs.com/engage/organization/dsc',
-          icon: 'mdi-format-title',
+          icon: 'mdi-format-title primary',
           text: 'Tech Connect'
         },
         {
           name: 'twitter',
           link: 'https://twitter.com/ttugdsc',
-          icon: 'mdi-twitter',
+          icon: 'mdi-twitter red',
           text: 'Official DSC'
         },
         {
           name: 'discord',
           link: 'https://discord.gg/nTSWsXGNeQ',
-          icon: 'mdi-discord',
+          icon: 'mdi-discord green',
           text: 'Discord'
         },
         {
           name: 'youtube',
           link: 'https://www.youtube.com/channel/UCMjXs7pB9-E9wmpALv41aWg',
-          icon: 'mdi-youtube',
+          icon: 'mdi-youtube yellow',
           text: 'Developer Student Clubs TTU'
         },
         {
           name: 'github',
           link: 'https://github.com/ttugdsc',
-          icon: 'mdi-github',
+          icon: 'mdi-github black',
           text: 'GitHub'
         }
       ],
