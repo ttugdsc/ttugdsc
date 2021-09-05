@@ -1,5 +1,17 @@
 $devclub-blue: #1a73e8; //The primary blue color
 $devclub-blue-hover: #1765cc; //The primary blue color when used in a hover style
 $devclub-blue-active: #185abc; //The primary blue color when used in an active style
-
 $devclub-font-primary: #202124;
+
+//These breakpoints are borrowed from bootstrap
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+
+$medium-and-up: "only screen and (min-width : #{$bp-md + 1px})" !default;
+$large-and-up: "only screen and (min-width : #{$bp-lg + 1px})" !default;
+$small-and-down: "only screen and (max-width : #{$bp-sm})" !default;
+$medium-and-down: "only screen and (max-width : #{$bp-lg})" !default;
+$medium-only: "only screen and (min-width : #{$bp-md}) and (max-width : #{$bp-lg})" !default;

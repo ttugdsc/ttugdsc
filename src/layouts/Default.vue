@@ -1,36 +1,20 @@
 <template>
-  <v-app>
+  <div>
     <header class="header">
-      <div class="logoWrapper">
-        <img
-          class="logo"
-          src="../assets/logo.png"
-        >
-      </div>
-      <v-tabs
-        grow
-        class="tabsWrapper"
-      >
-        <v-tab to="/">
-          home
-        </v-tab>
-        <v-tab to="/Projects">
-          projects
-        </v-tab>
-        <v-tab to="/Events">
-          events
-        </v-tab>
-      </v-tabs>
+      <navbar />
     </header>
-    <slot/>
+    <slot />
     <footer />
-  </v-app>
+  </div>
 </template>
 
 <script>
-export default {}
+import Navbar from '../components/Navbar.vue'
+export default {
+  components: { Navbar }
+}
 </script>
 
 <style scoped>
-@import "./Default.css";
+
 </style>

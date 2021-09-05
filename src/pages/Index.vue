@@ -5,7 +5,7 @@
         id="join-club"
         class="container"
       >
-        <div class="row">
+        <div class="row mt-2 mt-1-sm">
           <div class="col-7 center center-vertical">
             <h2>Developers Student Club <br>Texas Tech</h2>
             <p>
@@ -35,7 +35,7 @@
       >
         <div class="container py-2">
           <div class="row px-2-sm">
-            <div class="col-8 center-vertical">
+            <div class="col-8 center center-vertical">
               <h3>Our Goal</h3>
               <p>
                 Who we are and what we do ~~~ Lorem ipsum dolor sit amet, consec
