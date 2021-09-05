@@ -1,12 +1,25 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css");
 @import 'modules/base';
 
-nav {
-  box-shadow: 0px 5px 5px -7px #4e4c4d;
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh !important;
 }
 
 body {
-  margin: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  height: 100vh;
+}
+
+nav {
+  box-shadow: 0px 5px 5px -7px #4e4c4d;
 }
 
 //========================
@@ -15,11 +28,12 @@ body {
 
 .OfficerGrid {
   display: grid;
-  grid-template-columns: repeat(7,auto);
-  grid-template-rows: repeat(2,auto);
+  height: 100%;
+  grid-template-columns: repeat(7,1fr);
 }
 
 .OfficerAvatar {
+  height: 100%;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -48,7 +62,11 @@ body {
   .OfficerItem {
     grid-column: span 1;
     max-width: 10vw;
-    height: 16vh;
+    height: 100%;
+  }
+
+  .OfficerGrid {
+    height: 100%;
   }
 
   .OfficerAvatar {
@@ -57,7 +75,7 @@ body {
       justify-content: center;
       align-items: center;
       text-align: center;
-      height: 25vw;
+      min-height: 25vw;
   }
 
   .top {

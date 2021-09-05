@@ -10,12 +10,16 @@ img {
   height: 100%;
 }
 
+section {
+  min-height: 100%;
+}
+
 //This is the wrapper for the layout
 .container {
-  height: auto !important;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
 
     @media only screen and (min-width: $bp-md) {
         max-width: 720px;
@@ -36,12 +40,15 @@ img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
+ 
 }
 
 .row {
     display: grid;
     grid-template-columns: repeat(12,1fr);
     gap: 20px;
+    height: 100%;
 }
 
 .center-vertical {

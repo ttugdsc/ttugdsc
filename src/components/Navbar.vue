@@ -8,7 +8,7 @@
         href="/"
         class="brand-logo left"
       >
-        <g-image src="~/assets/dsc_icon.svg" />
+        <img src="../assets/dsc_icon.svg">
       </a>
       <ul
         id="tabs"
@@ -79,12 +79,27 @@ export default {
   mounted () {
     window.document.onscroll = () => {
       const navBar = document.getElementById('nav-wrap')
-      if (window.scrollY > navBar.offsetTop) {
+      const offset = navBar.offsetTop
+      if (window.scrollY >= offset) {
         this.active = true
+        document.body.style.paddingTop = navBar.offsetHeight + 'px'
       } else {
         this.active = false
+        document.body.style.paddingTop = 0
       }
     }
+
+    window.addEventListener('resize', () => {
+      const navBar = document.getElementById('nav-wrap')
+      const offset = navBar.offsetTop
+      if (window.scrollY >= offset) {
+        this.active = true
+        document.body.style.paddingTop = navBar.offsetHeight + 'px'
+      } else {
+        this.active = false
+        document.body.style.paddingTop = 0
+      }
+    })
 
     const createUnderline = () => {
       const tab = document.getElementById('tab-' + this.currentIndex)

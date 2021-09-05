@@ -4,14 +4,15 @@
       <navbar />
     </header>
     <slot />
-    <footer />
+    <footbar />
   </div>
 </template>
 
 <script>
+import Footbar from '../components/Footer.vue'
 import Navbar from '../components/Navbar.vue'
 export default {
-  components: { Navbar }
+  components: { Navbar, Footbar }
 }
 </script>
 

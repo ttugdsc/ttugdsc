@@ -8,7 +8,7 @@ nav {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     display: flex;
-    position: static;
+    position: relative;
 
     @media #{$small-and-down} {
         flex-wrap: wrap;
@@ -136,7 +136,8 @@ nav {
     }
 
 .navbar-fixed {
-    position: relative;
+    position: fixed;
+    top: 0;
     height: 48px;
     z-index: 997;
   

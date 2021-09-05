@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container">
+    <div class="container page">
       <h1>Projects</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque

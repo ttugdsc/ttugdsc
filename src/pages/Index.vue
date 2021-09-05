@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <main class="container-full ">
+    <main style="height: 100%">
       <section
         id="join-club"
         class="container"
@@ -20,10 +20,10 @@
             </a>
           </div>
           <div class="col-6 first-sm">
-            <g-image
+            <img
               id="hero-image"
-              src="~/assets/smiling.jpg"
-            />
+              src="../assets/smiling.jpg"
+            >
           </div>
         </div>
       </section>
@@ -73,9 +73,13 @@
               <h3>Our Core Team</h3>
             </div>
           </div>
-          <div class="row">
+          <div
+            class="row mb-2"
+          >
             <div class="col-12">
-              <div class="OfficerGrid">
+              <div
+                class="OfficerGrid"
+              >
                 <div
                   v-for="avatar in avatars"
                   :key="avatar.name"
