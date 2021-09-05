@@ -12,7 +12,6 @@
 
 If you have any questions or concerns about the CSS or run into any problems contact jaxcksn on discord.
 ## Using the Grid
----
 <br />
 
 **It is recommended to learn about bootstrap and how the in it grid system works, as lots of the utility classes and grid is based on that framework.**
@@ -105,7 +104,6 @@ For example:
 Make sure you test your site at all breakpoints to make sure it looks good, and adjust the columns and classes accordingly.
 
 ## Utility Classes
----
 There is also a variety of CSS classes you can use to accomplish basic styling.
 
 ### Margin Utility
