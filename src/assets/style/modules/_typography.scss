@@ -1,40 +1,60 @@
 @import 'variables';
+@import 'fonts';
+
 $font-base: 1rem;
 
 html {
     font-size: $font-base;
-    color: $devclub-font-primary;
-    font-family: 'Roboto' ;
+    color: $devclub-font-color;
+    font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+}
+
+p {
+  margin-top: 0;
+  font-size: $font-base;
+  color: $devclub-font-color;
+  margin-bottom: 0.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 400;
+	font-weight: bold;
+  font-family: 'Google Sans Display', Arial, Helvetica, sans-serif !important;
+}
+
+a {
+  font-family: 'Google Sans', Arial, Helvetica, sans-serif !important;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 
 h1 {
     font-size: $font-base * 2.5;
+    margin-bottom: ($font-base * 2.5)/2;
   }
   
   h2 {
     font-size: $font-base * 2;
+    margin-bottom: ($font-base * 2)/2;
   }
   
   h3 {
     font-size: $font-base * 1.75;
+    margin-bottom: ($font-base * 1.5)/2;
   }
   
   h4 {
     font-size: $font-base * 1.5;
+    margin-bottom: ($font-base * 1.25)/2;
   }
   
   h5 {
     font-size: $font-base * 1.25;
+    margin-bottom: ($font-base * 1.15)/2;
   }
   
   h6 {
     font-size: $font-base;
+    margin-bottom: ($font-base)/2;
   }
   
   p {

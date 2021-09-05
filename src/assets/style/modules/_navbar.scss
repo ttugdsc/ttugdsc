@@ -1,7 +1,7 @@
 @import 'variables';
 
 nav {
-    color: $devclub-font-primary;
+    color: $devclub-font-color;
     background-color: white;
     width: 100%;
     height: 48px;
@@ -16,7 +16,7 @@ nav {
     }
 
     a {
-        color: $devclub-font-primary;
+        color: $devclub-font-color;
     }
 
     .nav-wrapper {
@@ -95,7 +95,7 @@ nav {
             text-transform: uppercase;
             transition: background-color 0.1s ease-in;
             &.active--exact {
-                color: $devclub-blue;
+                color: $devclub-primary;
                 &:hover {
                     background-color: white;
                 }
@@ -123,7 +123,7 @@ nav {
             }
 
             &.active {
-                background-color: $devclub-blue;
+                background-color: $devclub-primary;
                 transform: scaleX(1);
             }
         }

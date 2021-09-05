@@ -5,25 +5,24 @@
         id="join-club"
         class="container"
       >
-        <div class="row mt-2 mt-1-sm">
-          <div class="col-7 center center-vertical">
-            <h2>Developers Student Club <br>Texas Tech</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              interdum blandit lacus, mollis mollis tortor vehicula vitae.
-            </p>
+        <div class="row mt-1-sm hero">
+          <div class="col-6 center center-horizontal center-vertical">
+            <g-image
+              src="~/assets/lockup.svg"
+              class="lockup mt-2-sm"
+            />
             <a
-              class="btn-lg mt-2  "
+              class="btn-lg mt-4 mt-2-md"
               href="https://gdsc.community.dev/texas-tech-university/"
               target="_blank"
             >
               Become a Member!
             </a>
           </div>
-          <div class="col-5 first-sm">
+          <div class="col-6 first-sm">
             <g-image
-              class="img-responsive"
-              src="https://picsum.photos/640/360"
+              id="hero-image"
+              src="~/assets/smiling.jpg"
             />
           </div>
         </div>
@@ -31,13 +30,15 @@
 
       <section
         id="our-goal"
-        class="bg-primary mt-5"
+        class="bg-primary"
       >
-        <div class="container py-2">
-          <div class="row px-2-sm">
-            <div class="col-8 center center-vertical">
+        <div class="container py-2 mt-3-sm">
+          <div
+            class="row px-2-sm"
+          >
+            <div class="col-8 center-vertical">
               <h3>Our Goal</h3>
-              <p>
+              <p class="white">
                 Who we are and what we do ~~~ Lorem ipsum dolor sit amet, consec
                 tetur adipiscing elit. Nam condimentum tempus diam, ultricies
                 sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros

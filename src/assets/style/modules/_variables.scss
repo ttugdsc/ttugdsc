@@ -1,9 +1,18 @@
-$devclub-blue: #1a73e8; //The primary blue color
-$devclub-blue-hover: #1765cc; //The primary blue color when used in a hover style
-$devclub-blue-active: #185abc; //The primary blue color when used in an active style
-$devclub-font-primary: #202124;
+/*
+==================================
+Table of Contents:
+1) BREAKPOINTS AND RESIZE
+2) COLORS AND BRANDING
 
-//These breakpoints are borrowed from bootstrap
+
+
+
+
+===================================
+*/
+
+
+//BREAKPOINTS AND RESPONSIVE RESIZE
 $bp-sm: 576px;
 $bp-md: 768px;
 $bp-lg: 992px;
@@ -15,3 +24,19 @@ $large-and-up: "only screen and (min-width : #{$bp-lg + 1px})" !default;
 $small-and-down: "only screen and (max-width : #{$bp-sm})" !default;
 $medium-and-down: "only screen and (max-width : #{$bp-lg})" !default;
 $medium-only: "only screen and (min-width : #{$bp-md}) and (max-width : #{$bp-lg})" !default;
+
+
+//branding:
+$devclub-primary: #4285F4;
+$devclub-red: #ea4335;
+$devclub-yellow: #ffbc04;
+$devclub-green: #34a853;
+
+$devclub-primary-hover: #2196F3;
+$devclub-red-hover: #F44336;
+$devclub-yellow-hover: #FFCA28;
+$devclub-green-hover: #66BB6A;
+
+$devclub-font-color: #202124;
+
+

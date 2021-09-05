@@ -1,7 +1,6 @@
 @import 'variables';
 
 $button-text-color: white;
-$button-bg-color: #1a73e8;
 
 
 .btn {
@@ -21,14 +20,14 @@ $button-bg-color: #1a73e8;
 .btn-lg {
     text-decoration: none;
     color: $button-text-color;
-    background-color: $devclub-blue;
+    background-color: $devclub-primary;
     text-align: center;
     letter-spacing: .5px;
     -webkit-transition: background-color .2s,border .2s,box-shadow .2s;
     transition: background-color .2s,border .2s,box-shadow .2s;
     cursor: pointer;
     &:hover {
-        background-color: $devclub-blue-hover;
+        background-color: $devclub-primary-hover;
         box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 1px 3px 1px rgba(60,64,67,0.15);
     }
 }
@@ -65,7 +64,7 @@ $button-bg-color: #1a73e8;
 .btn-outline,
 .btn-outline-lg {
     @extend .btn;
-    color: $devclub-blue;
+    color: $devclub-primary;
     background-color: transparent;
     transition: none;
     border: 1px solid #dadce0;

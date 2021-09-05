@@ -16,10 +16,6 @@ img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-  
-    @media only screen and (min-width: $bp-sm) {
-      max-width: 540px;
-    }
 
     @media only screen and (min-width: $bp-md) {
         max-width: 720px;
@@ -54,6 +50,13 @@ img {
   justify-content: center;
   flex-direction: column;
   height: 100%;
+}
+
+.center-horizontal {
+  display: flex;
+  align-items: center;
+flex-direction: column;
+height: 100%;
 }
 
 .hidden-sm {

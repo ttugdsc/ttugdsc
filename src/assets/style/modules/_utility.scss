@@ -16,6 +16,17 @@ $margin-values: (
     auto: auto
 );
 
+//Generates Color Utility Class
+$color-values: (
+    primary: $devclub-primary,
+    red: $devclub-red,
+    yellow: $devclub-yellow,
+    green: $devclub-green,
+    white: #ffffff,
+    black: $devclub-font-color
+);
+
+
 //Generates Margin Utility Classes
 @each $value,$size in $margin-values {
     .m-#{$value} {
@@ -82,6 +93,15 @@ $margin-values: (
     }
 }
 
+@each $name,$color in $color-values {
+    .#{$name} {
+        color: $color;
+    }
+
+    .bg-#{$name} {
+        background-color: $color;
+    }
+}
 
 @each $name,$bp in $breakpoints {
     @media screen and (max-width: $bp) {
@@ -155,9 +175,10 @@ $margin-values: (
 }
 
 
+
 .img-responsive {
     max-width: 100%;
-    height: 100%;
+    height: 20vw;
     object-fit: cover;
 }
 
@@ -165,5 +186,5 @@ $margin-values: (
 
 .bg-primary {
     color: white;
-    background-color: $devclub-blue;
+    background-color: $devclub-primary;
 }
