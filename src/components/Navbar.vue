@@ -79,7 +79,7 @@ export default {
   data () {
     return {
       active: false,
-      index: 1
+      index: 0
     }
   },
   computed: {
@@ -92,6 +92,9 @@ export default {
           current = i + 1
           break
         }
+      }
+      if (current === 0) {
+        current = 1
       }
       return current
     }
@@ -142,7 +145,7 @@ export default {
 
     changeActive (next) {
       if (this.currentIndex !== next) {
-        console.debug('run')
+        console.log('run')
         const underlineOld = document.getElementById('tab-' + this.currentIndex)
         const underlineNew = document.getElementById('tab-' + next)
         underlineOld.classList.remove('active')
