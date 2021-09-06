@@ -43,7 +43,7 @@
 
         <g-link
           class="tab"
-          to="/projects/"
+          to="/projects"
           @click.native="changeActive(2)"
         >
           Projects
@@ -51,7 +51,7 @@
 
         <g-link
           class="tab"
-          to="/events/"
+          to="/events"
           @click.native="changeActive(3)"
         >
           Events
@@ -93,27 +93,10 @@ export default {
           break
         }
       }
-      if (current === 0) {
-        current = 1
-      }
       return current
     }
   },
-  watch: {
-    $route () {
-      this.index = 1
-    }
-
-  },
   mounted () {
-    if (window.scrollY >= document.getElementById('nav-wrap').offsetHeight) {
-      this.active = true
-      document.body.style.paddingTop = document.getElementById('nav-wrap').offsetHeight + 'px'
-    } else {
-      this.active = false
-      document.body.style.paddingTop = 0
-    }
-
     window.document.onscroll = () => {
       const navBar = document.getElementById('nav-wrap')
       const offset = navBar.offsetTop
@@ -122,7 +105,7 @@ export default {
         document.body.style.paddingTop = navBar.offsetHeight + 'px'
       } else {
         this.active = false
-        document.body.style.paddingTop = 0
+        document.body.style.paddingTop = '0px'
       }
     }
 
@@ -150,8 +133,11 @@ export default {
     },
 
     changeActive (next) {
+      console.log('currnet: ' + this.currentIndex)
+      console.log(next)
       if (this.currentIndex !== next) {
-        const underlineOld = document.getElementById('tab-' + this.currentIndex)
+        const oldIndex = this.currentIndex
+        const underlineOld = document.getElementById('tab-' + oldIndex)
         const underlineNew = document.getElementById('tab-' + next)
         underlineOld.classList.remove('active')
         underlineNew.classList.add('active')

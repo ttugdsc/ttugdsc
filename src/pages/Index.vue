@@ -8,11 +8,11 @@
           <div class="row mt-1-sm hero">
             <div class="col-6 mt-2 mt-1-sm mb-3-md mb-0-sm center-vertical">
               <h1 class=" text-left">
-                Google Developer <span class="avoid-break">Student Club</span><h4 class="mt-0 roboto">
-                  Texas Tech University
-                </h4>
+                Google Developer <span class="avoid-break">Student Club</span>
               </h1>
-
+              <h4 class="mt-0 roboto">
+                Texas Tech University
+              </h4>
               <a
                 class="btn-lg mt-2 mb-2-md btn-centered-md"
                 href="https://gdsc.community.dev/texas-tech-university/"
