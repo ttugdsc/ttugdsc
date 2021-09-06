@@ -4,8 +4,8 @@
       <div class="row">
         <div class="col-12">
           <div class="center center-horizontal center-vertical">
-            <p class="white">
-              Made with love by GDSC TTU
+            <p class="footer-text">
+              Made with <b>❤</b> by GDSC TTU
             </p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 
-<img src='../lockup.jpg' width='100%' align='center' />
+<img src='../images/lockup.jpg' width='100%' align='center' />
 <br/>
 <br/>
 
@@ -38,7 +38,7 @@ When designing a page for the website, the first thing we must do is wrap everyt
     </div>
 </template>
 ```
-If you want the container to span the entire width of the page, you must change the class to `container-fluid`.
+If you want the container to span the entire width of the page, you must change the class to `container-full`.
 
 Then, when we want to add content, we should put it in a row:
 ```html

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container page">
+    <div class="container page mt-2">
       <div class="row">
         <div class="col-12">
           <h1>About us</h1>

@@ -1,203 +1,245 @@
-@import 'variables';
+@import "variables";
 
-$button-text-color: white;
+/*
+  All the buttons classes are listed here. To use these, just add any of these classes
+  to an anchor (<a>) element.  
 
+  Created Sep 5th 2021 - Jaxcksn
+*/
 
+//Default button styling
 .btn {
-    font-weight: 500;
-    border: none;
-    border-radius: 2px;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 16px;
-    text-transform: uppercase;
-    vertical-align: middle;
-    -webkit-tap-highlight-color: transparent;
-
-    
+  font-weight: 500;
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
 }
 
+// Styling shared between buttons
 .btn,
 .btn-lg {
-    text-decoration: none;
-    color: $button-text-color;
-    background-color: $devclub-primary;
-    text-align: center;
-    letter-spacing: .5px;
-    -webkit-transition: background-color .2s,border .2s,box-shadow .2s;
-    transition: background-color .2s,border .2s,box-shadow .2s;
-    cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background-color: $devclub-primary;
+  text-align: center;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+  cursor: pointer;
 
-    &.red {
-        background-color: $devclub-red;
-        color: white;
+  // Centers the button
+  &.btn-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-        &:hover {
-           background-color: $devclub-red-hover; 
-        }
+  // Aligns the button to the left
+  &.btn-left {
+    margin-right: auto;
+  }
+
+  // Aligns the button to the right
+  &.btn-right {
+    margin-left: auto;
+  }
+
+  // Allows buttons to be aligned based on breakpoints.
+  @each $name, $bp in $breakpoints {
+    @media screen and (max-width: $bp) {
+      &.btn-centered-#{$name} {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &.btn-left-#{$name} {
+        margin-right: auto;
+      }
+
+      &.btn-right-#{$name} {
+        margin-left: auto;
+      }
     }
+  }
 
-    &.yellow {
-        background-color: $devclub-yellow;
-        color: $devclub-font-color;
-
-        &:hover {
-           background-color: $devclub-yellow-hover; 
-        }
-    }
-
-    &.green {
-        background-color: $devclub-green;
-        color: white;
-
-        &:hover {
-           background-color: $devclub-green-hover; 
-        }
-    }
-
-    &.black {
-        background-color: $devclub-font-color;
-        color: white;
-
-        &:hover {
-            background-color: lighten($devclub-font-color,5%);
-        }
-    }
-
-    &.white {
-        background-color: #efefef;
-        color: $devclub-font-color;
-
-        &:hover {
-            background-color: darken(#efefef,5%);
-        }
-    }
+  
+  //Sets the color to red
+  &.red {
+    background-color: $devclub-red;
+    color: white;
 
     &:hover {
-        background-color: $devclub-primary-hover;
-        box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 1px 3px 1px rgba(60,64,67,0.15);
+      background-color: $devclub-red-hover;
     }
+  }
+
+  //Sets the color to yellow
+  &.yellow {
+    background-color: $devclub-yellow;
+    color: $devclub-font-color;
+
+    &:hover {
+      background-color: $devclub-yellow-hover;
+    }
+  }
+
+  //Sets the color to green
+  &.green {
+    background-color: $devclub-green;
+    color: white;
+
+    &:hover {
+      background-color: $devclub-green-hover;
+    }
+  }
+
+  //Sets the color to black
+  &.black {
+    background-color: $devclub-font-color;
+    color: white;
+
+    &:hover {
+      background-color: lighten($devclub-font-color, 5%);
+    }
+  }
+
+  //Sets the color to white
+  &.white {
+    background-color: #efefef;
+    color: $devclub-font-color;
+
+    &:hover {
+      background-color: darken(#efefef, 5%);
+    }
+  }
+
+  //Styles applied on hover
+  &:hover {
+    background-color: $devclub-primary-hover;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+      1px 3px 1px rgba(60, 64, 67, 0.15);
+  }
 }
 
+// This is for the special buttons on the index page. They need a bit more css than the others.
 .btn-social {
-    height: 36px;
-    display: flex;
-    flex: 1 0 auto;
-    font-size:.875rem;
-    font-weight: 500;
-    letter-spacing: .0892857143em;
-    align-items: center;
-    color: gray;
-    -webkit-transition: background-color .2s,border .2s,box-shadow .2s;
-    transition: background-color .2s,border .2s,box-shadow .2s;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: white;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border-radius: 5px;
-    &:hover {
-        color: black;
-        background-color: #eeeeee;
-        box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 1px 3px 1px rgba(60,64,67,0.15);
-    }
+  height: 36px;
+  display: flex;
+  flex: 1 0 auto;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.0892857143em;
+  align-items: center;
+  color: gray;
+  transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 5px;
+  &:hover {
+    color: black;
+    background-color: #eeeeee;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+      1px 3px 1px rgba(60, 64, 67, 0.15);
+  }
 }
 
+//Sets the font size for the icons to be larger than the text
 .btn-social > span {
-    font-size: 24px;
-    padding-right: 1rem;
+  font-size: 24px;
+  padding-right: 1rem;
 }
 
+// Sets the styles for the outlined buttons
 .btn-outline,
 .btn-outline-lg {
-    @extend .btn;
-    color: $devclub-primary;
+  @extend .btn;
+  color: $devclub-primary;
+  background-color: transparent;
+  transition: none;
+  border: 1px solid #dadce0;
+  transition: background-color 0.2s ease-out;
+
+  &.red {
     background-color: transparent;
-    transition: none;
-    border: 1px solid #dadce0;
-    transition: background-color .2s ease-out;
-    
-    &.red {
-        background-color: transparent;
-        color: $devclub-red;
-        
-
-        &:hover,
-        &:active {
-           background-color: lighten($devclub-red,40%); 
-           border: 1px solid lighten($devclub-red,30%);
-        }
-    }
-
-    &.yellow {
-        background-color: transparent;
-        color: $devclub-yellow;
-        
-
-        &:hover,
-        &:active {
-           background-color: lighten($devclub-yellow,40%); 
-           border: 1px solid lighten($devclub-yellow,30%);
-        }
-    }
-
-    &.green {
-        background-color: transparent;
-        color: $devclub-green;
-        
-
-        &:hover,
-        &:active {
-           background-color: lighten($devclub-green,40%); 
-           border: 1px solid lighten($devclub-green,30%);
-        }
-    }
-
-    &.black {
-        background-color: transparent;
-        color: $devclub-font-color;
-        
-
-        &:hover,
-        &:active {
-           background-color: lighten($devclub-font-color,40%); 
-           border: 1px solid lighten($devclub-font-color,30%);
-           color: white;
-        }
-    }
-
-    &.white {
-        background-color: transparent;
-        color: white;
-        
-
-        &:hover,
-        &:active {
-           background-color: darken(white,40%); 
-           border: 1px solid darken(white,30%);
-        }
-    }
+    color: $devclub-red;
 
     &:hover,
     &:active {
-        background-color: #e8f0fe;
-        border: 1px solid #d2e3fc;
-        box-shadow: none;
+      background-color: lighten($devclub-red, 40%);
+      border: 1px solid lighten($devclub-red, 30%);
     }
+  }
 
-}   
+  &.yellow {
+    background-color: transparent;
+    color: $devclub-yellow;
 
-.btn-lg {
-    @extend .btn
+    &:hover,
+    &:active {
+      background-color: lighten($devclub-yellow, 40%);
+      border: 1px solid lighten($devclub-yellow, 30%);
+    }
+  }
+
+  &.green {
+    background-color: transparent;
+    color: $devclub-green;
+
+    &:hover,
+    &:active {
+      background-color: lighten($devclub-green, 40%);
+      border: 1px solid lighten($devclub-green, 30%);
+    }
+  }
+
+  &.black {
+    background-color: transparent;
+    color: $devclub-font-color;
+
+    &:hover,
+    &:active {
+      background-color: lighten($devclub-font-color, 40%);
+      border: 1px solid lighten($devclub-font-color, 30%);
+      color: white;
+    }
+  }
+
+  &.white {
+    background-color: transparent;
+    color: white;
+
+    &:hover,
+    &:active {
+      background-color: darken(white, 40%);
+      border: 1px solid darken(white, 30%);
+    }
+  }
+
+  &:hover,
+  &:active {
+    background-color: #e8f0fe;
+    border: 1px solid #d2e3fc;
+    box-shadow: none;
+  }
 }
 
+//Just gives the large button the same properties as the small button
+.btn-lg {
+  @extend .btn;
+}
 
-.btn-lg, 
+//Sets the css for both styles of the large button.
+//The large button takes up 80% of the width but you can override this inline.
+.btn-lg,
 .btn-outline-lg {
-    width: 80%;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px 0px 10px 0px;
+  width: 80%;
+  display: inline-block;
+  border-radius: 10px 0px 10px 0px; //This sets the fancy border radius from the wireframes
 }

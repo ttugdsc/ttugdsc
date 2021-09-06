@@ -10,8 +10,7 @@
     "lint:fix": "npx eslint --ext .js,.vue --fix ."
   },
   "dependencies": {
-    "gridsome": "^0.7.0",
-    "vue-navigation-bar": "^4.1.0"
+    "gridsome": "^0.7.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",

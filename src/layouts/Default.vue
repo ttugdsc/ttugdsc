@@ -3,7 +3,12 @@
     <header class="header">
       <navbar />
     </header>
-    <slot />
+    <transition
+      name="fade"
+      appear
+    >
+      <slot />
+    </transition>
     <footbar />
   </div>
 </template>
@@ -17,5 +22,11 @@ export default {
 </script>
 
 <style scoped>
+.fade-enter-active {
+  transition: opacity .5s;
+}
 
+.fade-enter {
+  opacity: 0;
+}
 </style>

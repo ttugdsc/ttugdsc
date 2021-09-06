@@ -1,82 +1,102 @@
-@import 'variables';
-@import 'fonts';
+@import "variables";
+/*
+  Typography, including headings is here. Most of this is based on the brandguidelines from google.
+  If you need to override any of these, I would create a new class and just apply to the text so it
+  doesn't mess up any other headings.
 
-$font-base: 1rem;
+  Created Sep 5th 2021 - Jaxcksn
+*/
 
+$font-base: 1rem; // The default font size. This is usally 16px, but it can change.
+
+// Sets the font size to the base, the body text to the body font, and the font color to default
 html {
-    font-size: $font-base;
-    color: $devclub-font-color;
-    font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+  font-size: $font-base;
+  color: $devclub-font-color;
+  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
 }
 
+// Sets paragraph styles
 p {
   margin-top: 0;
   font-size: $font-base;
   color: $devclub-font-color;
   margin-bottom: 0.5rem;
+  font-weight: normal;
+  line-height: $font-base;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
-  font-family: 'Google Sans Display', Arial, Helvetica, sans-serif !important;
+// Sets headings to bold, and to use the correct font family.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: "Google Sans Display", Arial, Helvetica, sans-serif;
+  margin-top: 0;
+
+  // For special headings that want to use Roboto Mono.
+  &.roboto {
+    font-family: "Roboto Mono", "Google Sans Display", Arial, Helvetica,
+      sans-serif !important;
+  }
 }
 
+// Sets all anchors to use google sans (this are mainly buttons).
 a {
-  font-family: 'Google Sans', Arial, Helvetica, sans-serif !important;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif !important;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+// Make's sure that heading anchors also use the correct font.
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+}
 
+// Based on the default font size.
+// The margin at the bottom is set based on the brand guidelines
 h1 {
-    font-size: $font-base * 2.5;
-    margin-bottom: ($font-base * 2.5)/2;
-  }
-  
-  h2 {
-    font-size: $font-base * 2;
-    margin-bottom: ($font-base * 2)/2;
-  }
-  
-  h3 {
-    font-size: $font-base * 1.75;
-    margin-bottom: ($font-base * 1.5)/2;
-  }
-  
-  h4 {
-    font-size: $font-base * 1.5;
-    margin-bottom: ($font-base * 1.25)/2;
-  }
-  
-  h5 {
-    font-size: $font-base * 1.25;
-    margin-bottom: ($font-base * 1.15)/2;
-  }
-  
-  h6 {
-    font-size: $font-base;
-    margin-bottom: ($font-base)/2;
-  }
-  
-  p {
-    font-size: $font-base;
-    font-weight: normal;
-    line-height: $font-base;
-  }
+  font-size: $font-base * 2.5;
+  margin-bottom: ($font-base * 2.5)/2;
+}
 
-.left {
-    text-align: left;
-  }
-  
-  .right {
-    text-align: right;
-  }
-  
-  .center {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .justify {
-    text-align: justify;
-  }
+h2 {
+  font-size: $font-base * 2;
+  margin-bottom: ($font-base * 2)/2;
+}
+
+// H3 is the heading recommended to go above body text.
+h3 {
+  font-size: $font-base * 1.5;
+  margin-bottom: ($font-base * 1.5)/2;
+}
+
+h4 {
+  font-size: $font-base * 1.25;
+  margin-bottom: ($font-base * 1.25)/2;
+}
+
+h5 {
+  font-size: $font-base * 1.15;
+  margin-bottom: ($font-base * 1.15)/2;
+}
+
+h6 {
+  font-size: $font-base;
+  margin-bottom: ($font-base)/2;
+}
+
+/* 
+ This is actually used to avoid breaking certain words apart.
+ Within a text element if you want to avoid having a line break between
+ certain words, put a span with this class around those words.
+*/
+.avoid-break {
+  display: inline-block;
+}
