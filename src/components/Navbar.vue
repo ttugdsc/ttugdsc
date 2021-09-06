@@ -99,6 +99,27 @@ export default {
       return current
     }
   },
+  watch: {
+    $route () {
+      const currentIndex = () => {
+        let current = this.index
+        const tabs = document.getElementById('tabs')
+        const children = tabs.children
+        for (let i = 0; i < children.length; i++) {
+          if (children[i].classList.contains('active--exact')) {
+            current = i + 1
+            break
+          }
+        }
+        if (current === 0) {
+          current = 1
+        }
+        return current
+      }
+      this.index = currentIndex()
+    }
+
+  },
   mounted () {
     if (window.scrollY >= document.getElementById('nav-wrap').offsetHeight) {
       this.active = true
@@ -145,7 +166,7 @@ export default {
 
     changeActive (next) {
       if (this.currentIndex !== next) {
-        console.log('run')
+        // console.log('run')
         const underlineOld = document.getElementById('tab-' + this.currentIndex)
         const underlineNew = document.getElementById('tab-' + next)
         underlineOld.classList.remove('active')
