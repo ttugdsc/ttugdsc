@@ -100,7 +100,7 @@ export default {
     window.document.onscroll = () => {
       const navBar = document.getElementById('nav-wrap')
       const offset = navBar.offsetTop
-      if (window.scrollY >= offset) {
+      if (window.scrollY > offset) {
         this.active = true
         document.body.style.paddingTop = navBar.offsetHeight + 'px'
       } else {
