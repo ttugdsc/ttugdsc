@@ -79,21 +79,21 @@ export default {
   data () {
     return {
       active: false,
-      index: 0
+      index: 1
     }
   },
   computed: {
     currentIndex () {
-      let active = this.index
+      let current = this.index
       const tabs = document.getElementById('tabs')
       const children = tabs.children
       for (let i = 0; i < children.length; i++) {
         if (children[i].classList.contains('active--exact')) {
-          active = i + 1
+          current = i + 1
           break
         }
       }
-      return active
+      return current
     }
   },
   mounted () {
