@@ -1,0 +1,233 @@
+/*
+  Creates the CSS classes for responsive design. The entire system is very similar to the bootstrap
+  grid, except this system uses CSS grid instead of flexbot. The big exception is that large and
+  medium will always share a column layout. There is no col-n-md class.
+
+  Created Sep 5th 2021 - Jaxcksn
+*/
+
+//These breakpoints are borrowed from bootstrap
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+//This is the wrapper for the layout, and must be at the root of every page.
+.container {
+  box-sizing: border-box;  
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  padding: 0;
+  padding-left: 1.5rem * 0.5;
+  padding-right: 1.5rem * 0.5;
+
+  @media screen and (min-width: $bp-sm) {
+    max-width: 540px;
+    
+  }
+
+  @media only screen and (min-width: $bp-md) {
+    max-width: 720px;
+  }
+
+  @media only screen and (min-width: $bp-lg) {
+    max-width: 960px;
+   
+  }
+
+  @media only screen and (min-width: $bp-xl) {
+    max-width: 1140px;
+  }
+}
+
+//This is a container, just with the width set to 100 always.
+.container-full {
+  min-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+/* This is for putting containers inside of full containers to create a full width 
+background, but with container margins. */
+.inner-container {
+  box-sizing: border-box;
+  padding-left: 1.5rem * 0.5;
+  padding-right: 1.5rem * 0.5;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: inherit;
+
+  @media screen and (min-width: $bp-sm) {
+    max-width: 540px;
+  }
+
+  @media only screen and (min-width: $bp-md) {
+    max-width: 720px;
+  }
+
+  @media only screen and (min-width: $bp-lg) {
+    max-width: 960px;
+  }
+
+  @media only screen and (min-width: $bp-xl) {
+    max-width: 1140px;
+  }
+}
+
+//You must wrap all columns in a row, and the columns must equal 12.
+.row {
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  height: 100%;
+  
+  width: 100%;
+}
+
+//This vertically centers an element with flexbox.
+.center-vertical {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+//This horizontally centers an element with flexbox
+.center-horizontal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+//Hides an element at small breakpoints
+.hidden-sm {
+  display: none;
+}
+
+//Only shows an element at small breakpoints
+.sm-only {
+  display: block;
+}
+
+//This sets the column to appear first at smaller breakpoints.
+.first-sm {
+  grid-row: 1;
+}
+
+//This is just shorthand for col-12
+.col {
+  grid-column: span 12;
+}
+
+/*
+Everything below this is just setting up the columns to behave responsively with breakpoints.
+Remember that they must equal 12.
+*/
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  grid-column: span 12;
+}
+
+.col-1-sm {
+  grid-column: span 1;
+}
+.col-2-sm {
+  grid-column: span 2;
+}
+.col-3-sm {
+  grid-column: span 3;
+}
+.col-4-sm {
+  grid-column: span 4;
+}
+.col-5-sm {
+  grid-column: span 5;
+}
+.col-6-sm {
+  grid-column: span 6;
+}
+.col-7-sm {
+  grid-column: span 7;
+}
+.col-8-sm {
+  grid-column: span 8;
+}
+.col-9-sm {
+  grid-column: span 9;
+}
+.col-10-sm {
+  grid-column: span 10;
+}
+.col-11-sm {
+  grid-column: span 11;
+}
+.col-12-sm {
+  grid-column: span 12;
+}
+
+@media only screen and (min-width: $bp-md) {
+  .col-1 {
+    grid-column: span 1;
+  }
+  .col-2 {
+    grid-column: span 2;
+  }
+  .col-3 {
+    grid-column: span 3;
+  }
+  .col-4 {
+    grid-column: span 4;
+  }
+  .col-5 {
+    grid-column: span 5;
+  }
+  .col-6 {
+    grid-column: span 6;
+  }
+  .col-7 {
+    grid-column: span 7;
+  }
+  .col-8 {
+    grid-column: span 8;
+  }
+  .col-9 {
+    grid-column: span 9;
+  }
+  .col-10 {
+    grid-column: span 10;
+  }
+  .col-11 {
+    grid-column: span 11;
+  }
+  .col-12 {
+    grid-column: span 12;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+
+  .first-sm {
+    grid-row: auto;
+  }
+
+  .sm-only {
+    display: none;
+  }
+}

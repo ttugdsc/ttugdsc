@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+/* 
+  This is setting up the google sans webfont. I won't be adding comments since it is just definitions
+  for the google sans family.
+
+  Created Sep 5th 2021 - Jaxcksn
+*/
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../fonts/GoogleSans-BoldItalic.woff2") format("woff2"),
+    url("../fonts/GoogleSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../fonts/GoogleSans-Bold.woff2") format("woff2"),
+    url("../fonts/GoogleSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans Display";
+  src: url("../fonts/GoogleSansDisplay-Italic.woff2") format("woff2"),
+    url("../fonts/GoogleSansDisplay-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans Display";
+  src: url("../fonts/GoogleSansDisplay-BoldItalic.woff2") format("woff2"),
+    url("../fonts/GoogleSansDisplay-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../fonts/GoogleSans-MediumItalic.woff2") format("woff2"),
+    url("../fonts/GoogleSans-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../fonts/GoogleSans-Medium.woff2") format("woff2"),
+    url("../fonts/GoogleSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans Display";
+  src: url("../fonts/GoogleSansDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/GoogleSansDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../fonts/GoogleSans-Italic.woff2") format("woff2"),
+    url("../fonts/GoogleSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../fonts/GoogleSans-Regular.woff2") format("woff2"),
+    url("../fonts/GoogleSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans Display";
+  src: url("../fonts/GoogleSansDisplay-Medium.woff2") format("woff2"),
+    url("../fonts/GoogleSansDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans Display";
+  src: url("../fonts/GoogleSansDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/GoogleSansDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans Display";
+  src: url("../fonts/GoogleSansDisplay-MediumItalic.woff2") format("woff2"),
+    url("../fonts/GoogleSansDisplay-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}

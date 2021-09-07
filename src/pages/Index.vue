@@ -1,84 +1,119 @@
 <template>
   <Layout>
-    <div class="homeHeaderWrapper">
-      <div class="becomeAMemberWrapper">
-        <p class="developersStudentClubText">
-          Developers Student Club
-        </p>
-        <p class="developersStudentClubText">
-          Texas Tech
-        </p>
-        <p class="extraText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          interdum blandit lacus, mollis mollis tortor vehicula vitae.
-        </p>
-        <v-btn
-          block
-          color="primary"
-          outlined
-          class="becomeAMemberBtn"
-          href="https://gdsc.community.dev/texas-tech-university/"
-          target="_blank"
-        >
-          Become a Member!
-        </v-btn>
-      </div>
-      <img
-        src="https://i.imgur.com/escfpv7.png"
-        class="studentsTalkingImg"
+    <main style="height: 100%">
+      <section
+        id="join-club"
       >
-    </div>
-    <div class="homeBodyWrapper">
-      <div class="bodyText">
-        <p class="ourGoalText">
-          Our Goal
-        </p>
-        <p>
-          Who we are and what we do ~~~ Lorem ipsum dolor sit amet, consec tetur
-          adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin
-          erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet
-          consectetur. Vivamus eget elementum
-        </p>
-      </div>
-      <div class="bodyBtns">
-        <div
-          v-for="socialBtn in socialBtns"
-          :key="socialBtn.name"
-        >
-          <v-btn
-            :href="socialBtn.link"
-            v-bind="socialBtnWrapperProps"
+        <div class="inner-container">
+          <div class="row mt-1-sm hero">
+            <div class="col-6 mt-2 mt-1-sm mb-3-md mb-0-sm center-vertical">
+              <h1 class=" text-left">
+                Google Developer <span class="avoid-break">Student Club</span>
+              </h1>
+              <h4 class="mt-0 roboto">
+                Texas Tech University
+              </h4>
+              <a
+                class="btn-lg mt-2 mb-2-md btn-centered-md"
+                href="https://gdsc.community.dev/texas-tech-university/"
+                target="_blank"
+              >
+                Become a Member!
+              </a>
+            </div>
+            <div class="col-6 first-sm">
+              <g-image
+                id="hero-image"
+                src="~/assets/images/smiling.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="our-goal"
+        class=" bg-primary"
+      >
+        <div class="inner-container py-3">
+          <div class="row">
+            <div
+              class="
+            col-7
+            white"
+            >
+              <h3>Our Goal</h3>
+              <p class="white">
+                Who we are and what we do ~~~ Lorem ipsum dolor sit amet, consec
+                tetur adipiscing elit. Nam condimentum tempus diam, ultricies
+                sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros
+                laoreet consectetur. Vivamus eget elementum
+              </p>
+            </div>
+            <div class="col-5">
+              <h3 class=" white">
+                Follow Us
+              </h3>
+              <div
+                v-for="socialBtn in socialBtns"
+                :key="socialBtn.name"
+              >
+                <a
+                  :href="socialBtn.link"
+                  class="btn-social my-1"
+                ><span
+                  class="mdi"
+                  :class="socialBtn.icon"
+                />{{ socialBtn.text }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="core-team">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 py-2">
+              <h2>Our Core Team</h2>
+            </div>
+          </div>
+          <div
+            class="row mb-2"
           >
-            <v-icon class="socialBtn">
-              {{ socialBtn.icon }}
-            </v-icon>
-            {{ socialBtn.text }}
-          </v-btn>
+            <div class="col-12">
+              <div
+                class="OfficerGrid"
+              >
+                <div
+                  v-for="avatar in avatars"
+                  :key="avatar.name"
+                  class="OfficerItem"
+                >
+                  <avatar
+                    :title="avatar.name"
+                    :officername="avatar.text"
+                    :imgsrc="avatar.img"
+                    :float="avatar.class"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="coreTeamWrapper">
-      <p class="coreTeamText">
-        Core Team
-      </p>
-      <div class="coreTeamImagesWrapper">
-        <div
-          v-for="avatar in avatars"
-          :key="avatar.name"
-          :class="avatar.class"
-        >
-          <v-avatar v-bind="avatarProps">
-            <img :src="avatar.img">
-          </v-avatar>
-          {{ avatar.text }}
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </Layout>
 </template>
 
 <script>
+import Avatar from '../components/Avatar.vue'
+
 export default {
+  components: { Avatar },
+  metaInfo: {
+    title: 'TTUGSDC'
+  },
   data () {
     return {
       socialBtnWrapperProps: {
@@ -91,7 +126,7 @@ export default {
       },
       socialBtns: [
         {
-          name: 'tectConnect',
+          name: 'techConnect',
           link: 'https://ttu.campuslabs.com/engage/organization/dsc',
           icon: 'mdi-format-title',
           text: 'Tech Connect'
@@ -112,7 +147,7 @@ export default {
           name: 'youtube',
           link: 'https://www.youtube.com/channel/UCMjXs7pB9-E9wmpALv41aWg',
           icon: 'mdi-youtube',
-          text: 'Developer Student Clubs TTU'
+          text: 'Youtube Channel'
         },
         {
           name: 'github',
@@ -123,46 +158,46 @@ export default {
       ],
       avatars: [
         {
-          name: 'teamMember1',
-          class: 'topTeamImg',
+          name: 'Team Lead',
+          class: 'top',
           img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Team Lead Placeholder Name'
+          text: 'Placeholder'
         },
         {
-          name: 'teamMember2',
-          class: 'bottomTeamImg',
+          name: 'Sponsorship',
+          class: 'bottom',
           img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Sponsorship Placeholder Name'
+          text: 'Placeholder'
         },
         {
-          name: 'teamMember3',
-          class: 'topTeamImg',
+          name: 'Marketing',
+          class: 'top',
           img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Markteting Placeholder Name'
+          text: 'Placeholder'
         },
         {
-          name: 'teamMember4',
-          class: 'bottomTeamImg',
+          name: 'Logistics',
+          class: 'bottom',
           img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Logistics Placeholder Name'
+          text: 'Placeholder'
         },
         {
-          name: 'teamMember5',
-          class: 'topTeamImg',
+          name: 'Finance',
+          class: 'top',
           img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Finance Placeholder Name'
+          text: 'Placeholder'
         },
         {
-          name: 'teamMember6',
-          class: 'bottomTeamImg',
+          name: 'Member Experience',
+          class: 'bottom',
           img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Member Experience Placeholder Name'
+          text: 'Placeholder'
         },
         {
-          name: 'teamMember7',
-          class: 'topTeamImg',
+          name: 'Outreach',
+          class: 'top',
           img: 'https://i.imgur.com/escfpv7.png',
-          text: 'Logistics Placeholder Name'
+          text: 'Placeholder'
         }
       ]
     }

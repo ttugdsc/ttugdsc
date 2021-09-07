@@ -1,0 +1,240 @@
+@import "variables";
+
+/*
+ Generates the Utility Classes for the html. Including margins, padding, text alignment and colors.
+ This is accomplish mainly using maps, heres the each loop used for per-breakpoint classes:
+
+ @each $n,$b in $breakpoints {
+    @media screen and (max-width: $b) {
+        selector-${n} {
+            
+        }
+    }
+ }
+
+  Created Sep 5th 2021 - Jaxcksn
+*/
+
+//Change this to change the corresponding margin utility values
+$margin-values: (
+  0: 0,
+  1: 0.25rem,
+  2: 1.5rem,
+  3: 3rem,
+  4: 4.5rem,
+  5: 5rem,
+  auto: auto,
+);
+
+//Map for Color Utility Class
+$color-values: (
+  primary: $devclub-primary,
+  red: $devclub-red,
+  yellow: $devclub-yellow,
+  green: $devclub-green,
+  white: #ffffff,
+  black: $devclub-font-color,
+);
+
+/*
+ To use these classes:
+ m-{n} sets the margins for all sides
+ mt-{n} sets the margins for the top
+ mb-{n} sets the margins for the bottom
+ ml-{n} sets the margins for the left
+ mr-{n} sets the margins for the right
+ my-{n} sets the margins for the top and bottom
+ mx-{n} sets the margins for left and right
+
+ If you want to use padding, change the m to a p.
+ You can also them at breakpoints.
+*/
+//Generates the margin classes
+@each $value, $size in $margin-values {
+  .m-#{$value} {
+    margin: $size;
+  }
+
+  .mt-#{$value} {
+    margin-top: $size;
+  }
+
+  .mb-#{$value} {
+    margin-bottom: $size;
+  }
+
+  .ml-#{$value} {
+    margin-left: $size;
+  }
+
+  .mr-#{$value} {
+    margin-right: $size;
+  }
+
+  .my-#{$value} {
+    margin-top: $size;
+    margin-bottom: $size;
+  }
+
+  .mx-#{$value} {
+    margin-left: $size;
+    margin-right: $size;
+  }
+}
+
+//Generates the padding classes
+@each $value, $size in $margin-values {
+  .p-#{$value} {
+    padding: $size;
+  }
+
+  .pt-#{$value} {
+    padding-top: $size;
+  }
+
+  .pb-#{$value} {
+    padding-bottom: $size;
+  }
+
+  .pl-#{$value} {
+    padding-left: $size;
+  }
+
+  .pr-#{$value} {
+    padding-right: $size;
+  }
+
+  .py-#{$value} {
+    padding-top: $size;
+    padding-bottom: $size;
+  }
+
+  .px-#{$value} {
+    padding-left: $size;
+    padding-right: $size;
+  }
+}
+
+//Generates per breakpoint for padding and margins
+@each $name, $bp in $breakpoints {
+  @media screen and (max-width: $bp) {
+    @each $value, $size in $margin-values {
+      .m-#{$value}-#{$name} {
+        margin: $size;
+      }
+
+      .mt-#{$value}-#{$name} {
+        margin-top: $size;
+      }
+
+      .mb-#{$value}-#{$name} {
+        margin-bottom: $size;
+      }
+
+      .ml-#{$value}-#{$name} {
+        margin-left: $size;
+      }
+
+      .mr-#{$value}-#{$name} {
+        margin-right: $size;
+      }
+
+      .my-#{$value}-#{$name} {
+        margin-top: $size;
+        margin-bottom: $size;
+      }
+
+      .mx-#{$value}-#{$name} {
+        margin-left: $size;
+        margin-right: $size;
+      }
+    }
+
+    @each $value, $size in $margin-values {
+      .p-#{$value}-#{$name} {
+        padding: $size;
+      }
+
+      .pt-#{$value}-#{$name} {
+        padding-top: $size;
+      }
+
+      .pb-#{$value}-#{$name} {
+        padding-bottom: $size;
+      }
+
+      .pl-#{$value}-#{$name} {
+        padding-left: $size;
+      }
+
+      .pr-#{$value}-#{$name} {
+        padding-right: $size;
+      }
+
+      .py-#{$value}-#{$name} {
+        padding-top: $size;
+        padding-bottom: $size;
+      }
+
+      .px-#{$value}-#{$name} {
+        padding-left: $size;
+        padding-right: $size;
+      }
+    }
+  }
+}
+
+//Aligns text to the center
+.text-center {
+  text-align: center;
+}
+//Aligns text to the left
+.text-left {
+  text-align: left;
+}
+
+//Aligns text to the right
+.text-right {
+  text-align: right;
+}
+
+//Generates alignment per breakpoint
+@each $name, $bp in $breakpoints {
+  @media screen and (max-width: $bp) {
+    .text-center-#{$name} {
+      text-align: center;
+    }
+    .text-left-#{$name} {
+      text-align: left;
+    }
+    .text-right-#{$name} {
+      text-align: right;
+    }
+  }
+}
+
+//Generates text and background color classes
+@each $name, $color in $color-values {
+  .#{$name} {
+    color: $color;
+  }
+
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+//Generates text and background per breakpoint
+@each $n, $b in $breakpoints {
+  @media screen and (max-width: $b) {
+    @each $name, $color in $color-values {
+      .#{$name}-#{$n} {
+        color: $color;
+      }
+
+      .bg-#{$name}-#{$n} {
+        background-color: $color;
+      }
+    }
+  }
+}

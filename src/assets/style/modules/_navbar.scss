@@ -1,0 +1,182 @@
+@import "variables";
+
+/*
+  These are all needed to style the navbar component, the comments will be more general in this
+  module since lots of css styling was needed to create this component.
+
+  Created Sep 5th 2021 - Jaxcksn
+*/
+
+//Styles the nav element
+nav {
+  color: $devclub-font-color;
+  background-color: white;
+  width: 100%;
+  height: 48px;
+  //padding-left: 0.5rem;
+  //padding-right: 0.5rem;
+  display: flex;
+  position: relative;
+  box-shadow: 0px 5px 5px -7px #4e4c4d;
+  margin-left: auto;
+  margin-left: auto;
+
+  //Sets the icon to go on top, and for the navbar to get taller
+  //That way all the tabs can fit.
+  @media #{$small-and-down} {
+    flex-wrap: wrap;
+    height: 96px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  a {
+    color: $devclub-font-color;
+  }
+
+  //Used for the component
+  .nav-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  //The logo to the left or very top of navbar
+  .brand-logo {
+    display: flex;
+    padding: 0;
+    width: 100px;
+    align-items: center;
+
+    &.center {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    //Set the height of the logo
+    > img,svg {
+      max-height: 48px;
+    }
+
+    //This is what allows it to push the tabs down
+    @media #{$small-and-down} {
+      width: 100%;
+      flex-basis: 100%;
+      &.left,
+      &.right {
+        padding: 0;
+        transform: none;
+      }
+
+      &.left {
+        left: 0.5rem;
+      }
+      &.right {
+        right: 0.5rem;
+        left: auto;
+      }
+    }
+
+    &.right {
+        right: 0.5rem;
+        padding: 0;
+      }
+
+    
+  }
+
+  //This should be applied to an Unordered List element
+  .tabs {
+    display: grid; //CSS grid worked really well on this. I was suprised.
+    width: 100%;
+    //If we needed another tab, this could be changed to create more,
+    //but we would need to make adjustments to the component too.
+    grid-template-columns: repeat(3, auto);
+    height: 48px;
+    margin: 0;
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+    padding-inline-start: 0px;
+
+    //This is just an <a> element styled really fancy
+    .tab {
+      &:hover {
+        background-color: #efefef;
+      }
+      color: rgba(0, 0, 0, 0.54);
+      display: flex;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.0892857143em;
+      margin: 0;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color 0.1s ease-in;
+      //This is connected to component logic
+      //The router gives the link element this class when you are on that route.
+      &.active--exact {
+        color: $devclub-primary;
+        &:hover {
+          background-color: white;
+        }
+      }
+    }
+
+    //This is the element that underlines the active tab.
+    //It's moved using CSS grid.
+    .underline {
+      bottom: 0;
+      height: 2px;
+      background-color: transparent;
+      will-change: left, right;
+      width: 100%;
+      
+
+     @media screen and (min-width: $bp-md) {
+        transform: scaleX(0);
+        transition: all 0.15s ease-in-out; //This is what gives the underline it's animation
+     }
+
+
+      //These classes are what "moves" the element, and the class is changed by the component
+      //to set the position of the underline.
+      &.pos-1 {
+        grid-column: 1;
+      }
+      &.pos-2 {
+        grid-column: 2;
+      }
+      //You would have to add another one of these classes if you were to add another tab.
+      &.pos-3 {
+        grid-column: 3;
+      }
+
+      //This element is also applied by the component logic.
+      &.active {
+        background-color: $devclub-primary;
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+//This is used to make the navbar sticky. You could use position: sticky
+//but the browser support for it is not very consistent.
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  height: 48px;
+  width: 100vw;
+  z-index: 997;
+
+  @media #{$small-and-down} {
+    height: 96px;
+  }
+
+  nav {
+    position: fixed;
+  }
+}
