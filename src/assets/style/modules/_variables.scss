@@ -1,0 +1,43 @@
+/*
+  All the shared variables between modules are kept here. Make sure to import it to
+  any file that wants to use them.
+
+  Created Sep 5th 2021 - Jaxcksn
+*/
+
+$bp-sm: 576px; //Small Screens
+$bp-md: 768px; //Medium Screens
+$bp-lg: 992px; //Large Screens
+$bp-xl: 1200px; //Extra Large Screens
+
+//  You use these variables like this:
+//
+//  @media #{$put-variable-here} {
+//    content goes here.
+//  }
+//
+$medium-and-up: "only screen and (min-width : #{$bp-md + 1px})" !default;
+$large-and-up: "only screen and (min-width : #{$bp-lg + 1px})" !default;
+$small-and-down: "only screen and (max-width : #{$bp-sm})" !default;
+$medium-and-down: "only screen and (max-width : #{$bp-lg})" !default;
+$medium-only: "only screen and (min-width : #{$bp-md}) and (max-width : #{$bp-lg})" !default;
+
+//Breakpoints Map for Utility Each Loops
+$breakpoints: (
+  md: $bp-md,
+  sm: $bp-sm,
+);
+
+//Colors and Branding, all come from the guidelines
+$devclub-primary: #4285f4;
+$devclub-red: #ea4335;
+$devclub-yellow: #ffbc04;
+$devclub-green: #34a853;
+
+$devclub-primary-hover: lighten($devclub-primary, 5%);
+$devclub-red-hover: lighten($devclub-red, 5%);
+$devclub-yellow-hover: lighten($devclub-yellow, 5%);
+$devclub-green-hover: lighten($devclub-green, 5%);
+
+//Main color used for text
+$devclub-font-color: #202124;
