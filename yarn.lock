@@ -1035,11 +1035,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@popperjs/core@^2.8.3":
-  version "2.9.3"
-  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.3.tgz#8b68da1ebd7fc603999cf6ebee34a4899a14b88e"
-  integrity sha512-xDu17cEfh7Kid/d95kB6tZsLOmSWKCZKtprnhVepjsSaCij+lM3mItSJDuuHDMbCWTh8Ejmebwb+KONcCJ0eXQ==
-
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -9252,13 +9247,6 @@ timsort@^0.3.0:
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
 
-tippy.js@^6.2.4:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-6.3.1.tgz#3788a007be7015eee0fd589a66b98fb3f8f10181"
-  integrity sha512-JnFncCq+rF1dTURupoJ4yPie5Cof978inW6/4S6kmWV7LL9YOSEVMifED3KdrVPEG+Z/TFH2CDNJcQEfaeuQww==
-  dependencies:
-    "@popperjs/core" "^2.8.3"
-
 to-arraybuffer@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz#7d229b1fcc637e466ca081180836a7aabff83f43"
@@ -9771,24 +9759,10 @@ vue-meta@^2.2.2:
   dependencies:
     deepmerge "^4.2.2"
 
-vue-navigation-bar@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/vue-navigation-bar/-/vue-navigation-bar-4.1.0.tgz#fc29fc6b27dc7b70b32cb79c6ec291ad262a5c08"
-  integrity sha512-iBkLLI954jlOatPy+ciGMDn/CnaZxPR2eZqEy4Pypz+SvU5BL9ByapO2r5tZUzANwzVJlzS7zEU0jSqAL2+nPQ==
-  dependencies:
-    tippy.js "^6.2.4"
-    vue-screen-size "^1.0.1"
-    vue2-transitions "^0.3.0"
-
 vue-router@^3.1.3:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.5.2.tgz#5f55e3f251970e36c3e8d88a7cd2d67a350ade5c"
   integrity sha512-807gn82hTnjCYGrnF3eNmIw/dk7/GE4B5h69BlyCK9KHASwSloD1Sjcn06zg9fVG4fYH2DrsNBZkpLtb25WtaQ==
-
-vue-screen-size@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/vue-screen-size/-/vue-screen-size-1.0.1.tgz#4c120ac09929b735eafe5898c6abf12ddb441895"
-  integrity sha512-FvPAQAZp235cWpceazYK3CyPXUmogJRbPwa2F34l4BiwNoCZxZIKcEgqrScpCm0pi8llPrGlHHiuM7uuQc3mHA==
 
 vue-server-renderer@^2.6.10:
   version "2.6.14"
@@ -9825,20 +9799,10 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue2-transitions@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/vue2-transitions/-/vue2-transitions-0.3.0.tgz#765fc0d743103fcfe2d10f431697d8873a075c17"
-  integrity sha512-m1ad8K8kufqiEhj5gXHkkqOioI5sW0FaMbRiO0Tv2WFfGbO2eIKrfkFiO3HPQtMJboimaLCN4p/zL81clLbG4w==
-
 vue@^2.6.10:
   version "2.6.14"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
   integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
-
-vuetify@^2.5.8:
-  version "2.5.8"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-2.5.8.tgz#a23e6a7e77b77de0744b53cf1e7c9d40efac0635"
-  integrity sha512-paLmNhKTYFD41+14rIHnCo+P1jHbUzwBiMowxs5qXVq8RdRMqRmcy05Sfse1WUu90amPGK2fIFQq5rL2N8zqZg==
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"
