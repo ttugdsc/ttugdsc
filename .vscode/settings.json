@@ -1,0 +1,6 @@
+{
+    "stylelint.validate": [
+        // ↓ Add "vue" language.
+        "vue"
+    ]
+}

@@ -3,9 +3,19 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "typecheck": "nuxi typecheck",
+    "lint": "eslint --ext .ts,.vue . && stylelint **/*.vue"
   },
   "devDependencies": {
-    "nuxt3": "latest"
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-vue": "^8.5.0",
+    "nuxt3": "latest",
+    "postcss-html": "^1.3.0",
+    "prettier": "2.5.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-scss": "^5.0.2",
+    "stylelint-config-recommended-vue": "^1.3.0"
   }
 }
