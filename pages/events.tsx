@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Navbar from "../components/Navbar";
-const Home: NextPage = () => {
+const Events: NextPage = () => {
   return (
     <Navbar />
   );
 };
 
-export default Home;
+export default Events;
