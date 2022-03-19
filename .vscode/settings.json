@@ -1,6 +1,6 @@
 {
-    "stylelint.validate": [
-        // ↓ Add "vue" language.
-        "vue"
-    ]
+  "stylelint.validate": [
+    // ↓ Add "vue" language.
+    "vue"
+  ]
 }
