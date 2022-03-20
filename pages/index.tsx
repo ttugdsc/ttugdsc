@@ -1,6 +1,6 @@
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 import { Button, Typography } from "@mui/material";
+import Paper from "@mui/material/Paper";
+import Grid from "@mui/material/Grid";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Head from "next/head";
@@ -10,7 +10,7 @@ import Navbar from "../components/Navbar";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <>{/*Metadata on the page*/}
       <Head>
         <title>Home - TTU GDSC</title>
         <meta content="Landing page of the Texas Tech Google Developer Student Club" />
