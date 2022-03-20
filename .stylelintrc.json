@@ -1,9 +1,16 @@
 {
-  "extends": ["stylelint-config-recommended-vue/scss", "stylelint-config-prettier"],
-  "overrides": [{
-    "files": ["**/*.{js}", "**/*.vue"],
-    "rules": [{
-      "no-empty-source": { }
-    }]
-  }]
+  "extends": [
+    "stylelint-config-recommended-vue/scss",
+    "stylelint-config-prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.{js}", "**/*.vue"],
+      "rules": [
+        {
+          "no-empty-source": {}
+        }
+      ]
+    }
+  ]
 }

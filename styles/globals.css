@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap);
 html,
 body {
   padding: 0;
@@ -13,4 +14,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.MuiContainer-maxWidthXs	{
+  max-width: 8rem;
 }
