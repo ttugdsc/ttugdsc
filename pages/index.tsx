@@ -109,6 +109,12 @@ const Home: NextPage = () => {
                 />
               </Grid>
             </Grid>
+            {/*
+            TODOs
+            Break apart the pages into components
+            Add officer photos
+            Add footer
+            */}
           </Grid>
         </Paper>
       </Grid>
