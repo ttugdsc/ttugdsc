@@ -28,6 +28,7 @@ const Home: NextPage = () => {
 {
 /*
 TODOs
+Organize components by page
 Add officer photos
 Add footer
 Make responsive
