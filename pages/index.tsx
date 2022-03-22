@@ -15,8 +15,8 @@ const Home: NextPage = () => {
         <title>Home - TTU GDSC</title>
         <meta content="Landing page of the Texas Tech Google Developer Student Club" />
       </Head>
-      <Navbar />
       <Grid container direction="column">
+        <Navbar />
         <Hero />
         <Socials />
         <Team />

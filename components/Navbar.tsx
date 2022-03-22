@@ -5,6 +5,8 @@ import {
   Paper,
   BottomNavigation,
   BottomNavigationAction,
+  Tabs,
+  Tab
 } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import EventIcon from "@mui/icons-material/Event";
@@ -12,8 +14,6 @@ import CodeIcon from "@mui/icons-material/Code";
 import HomeIcon from "@mui/icons-material/Home";
 import { styled, useTheme } from "@mui/material/styles";
 import { useRouter } from "next/router";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
 import Image from "next/image";
 
 import Logo from "../assets/images/logo.png";
@@ -53,7 +53,7 @@ const Navbar = () => {
           <Grid
             container
             direction="column"
-            sx={{ width: "100%", bgcolor: "background.paper" }}
+            sx={{ width: "100%", bgcolor: "background.paper"}}
           >
             <Container maxWidth="xs">
               <Image src={Logo} alt="Google Developer Student Club logo" />

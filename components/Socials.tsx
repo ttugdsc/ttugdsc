@@ -19,7 +19,7 @@ const Socials = () => {
       >
         <Grid item xs={5} my={2}>
           <Grid container mb={3}>
-            <Typography variant="h6" sx={{ color: "white" }}>
+            <Typography variant="h4" sx={{ color: "white" }}>
               Our Goal
             </Typography>
           </Grid>
@@ -40,7 +40,7 @@ const Socials = () => {
         </Grid>
         <Grid item xs={4} my={2}>
           <Grid>
-            <Typography variant="h6" sx={{ color: "white" }}>
+            <Typography variant="h4" sx={{ color: "white" }}>
               Follow Us
             </Typography>
           </Grid>
