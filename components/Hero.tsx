@@ -1,44 +1,65 @@
-import { Typography, Button } from "@mui/material";
-import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
 import Students from "../assets/images/smiling.jpg";
+import {
+  Typography,
+  Button,
+  useMediaQuery,
+  Stack,
+  Container,
+} from "@mui/material";
+import Grid from "@mui/material/Grid";
 import Image from "next/image";
 
 const Hero = () => {
   return (
-    <Paper elevation={2}>
-      <Grid
-        container
-        direction={{ md: "row" }}
-        justifyContent="space-evenly"
-        alignItems="flex-start"
-        sx={{ maxHeight: "50%" }}
-      >
-        <Grid container sx={{ width: "50%", height: "100%" }} columns={3}>
-          <Paper elevation={0} sx={{ width: "100%", p: 10 }}>
-            <Typography variant="h2" gutterBottom component="div">
+    <Grid
+      container
+      direction={{ xs: "column-reverse", md: "row" }}
+      justifyContent="space-around"
+      xs={12}
+    >
+      <Grid container xs={12}>
+        <Stack direction={{ xs: "column", md: "row" }}>
+          <Grid
+            container
+            xs={12}
+            sx={{
+              p: 8,
+              justifyContent: {
+                xs: "center",
+                md: "start",
+              },
+            }}
+          >
+            <Typography
+              variant="h2"
+              gutterBottom
+              sx={{
+                textAlign: {
+                  xs: "center",
+                  md: "start",
+                },
+              }}
+            >
               Google Developer Student Club
             </Typography>
-            <Typography variant="h5" gutterBottom component="div">
+            <Typography variant="h5" gutterBottom>
               Texas Tech University
             </Typography>
             <Button
               variant="contained"
               sx={{ mt: 7, width: "80%" }}
-              size="large"
               href="https://linktr.ee/ttudsc"
               target="_blank"
             >
               Become a Member
             </Button>
-          </Paper>
-        </Grid>
-        <Grid container sx={{ width: "50%" }}>
-          <Image src={Students} alt="Happy coding students" />
-        </Grid>
+          </Grid>
+          <Grid item xs={12}>
+            <Image src={Students} alt="Happy coding students" />
+          </Grid>
+        </Stack>
       </Grid>
-    </Paper>
+    </Grid>
   );
 };
-
 export default Hero;

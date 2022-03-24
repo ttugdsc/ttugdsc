@@ -28,9 +28,9 @@ const Home: NextPage = () => {
   /*
 TODOs
 Organize components by page
-Add officer photos
 Add footer
-Make responsive
+Make Text banner look nicer for tablet and mobile
+Figure out button overlap bug on mobile
 */
 }
 export default Home;
