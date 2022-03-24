@@ -1,63 +1,29 @@
-# Texas Tech GDSC Website
+# TTUGDSC
 
-Here you can watch and even participate in the development on the TTU GDSC Website. Eventually, it'll be the single point of contact for the club. A one stop shop for our events, team, and projects.
+Public website for the Texas Tech chapter of the Google Developers Student Clubs
+I'm gonna try to make this with Vue, cleanly
 
-_To avoid unnecessary pain, we recommend reading up a bit or watching a bit on Vuejs and Gridsome._
+## Getting Started
 
-If you want to contribute, follow [our guidelines](https://github.com/ttugdsc/ttugdsc/blob/main/CONTRIBUTION.md).
-
-For a breakdown on what we're shooting for, check out our [project page](https://www.figma.com/file/uEBOlD2GGmVO0sCAKTowAh/Lo-fi-Wireframe-Kit-Launchpad-for-Website-Wireframe) and our [discussion page](https://github.com/ttugdsc/ttugdsc/discussions).
-
-### 1. Install yarn package manager if you don't have it yet
-
-You can find it [here](https://yarnpkg.com/getting-started).
-
-### 2. Install Gridsome CLI tool after installing yarn
-
-`yarn global add @gridsome/cli`
-
-### 3. Build Setup
+First, run the development server:
 
 ```bash
-# clone the repository
-git clone https://github.com/ttugdsc/ttugdsc
-
-# install dependencies
-$ cd ttugdsc
-$ yarn
-
-# start local dev server at `http://localhost:8080`
-$ gridsome develop
+npm run dev
+# or
+yarn dev
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://gridsome.org/docs/).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Special Directories
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-You can create the following extra directories, some of which have special behaviors.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-### `assets`
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+## Learn More
 
-More information about the usage of this directory in [the documentation](https://gridsome.org/docs/directory-structure/#recommendation).
+To learn more about Next.js, take a look at the following resources:
 
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://gridsome.org/docs/directory-structure/#shared-or-global-components).
-
-### `layouts`
-
-Create components in this directory if you want to share one or more layouts for your pages or templates.
-
-More information about the usage of this directory in [the documentation](https://gridsome.org/docs/layouts/).
-
-### `pages`
-
-All components in this directory become the pages for your website. Each page will get its path based on the location of its `.vue` file. `src/pages/Index.vue` will become the homepage for your website, while `src/pages/AboutUs.vue` will be `example.com/about-us`.
-
-More information about the usage of this directory in [the documentation](https://gridsome.org/docs/pages/).
-
-## 4. Happy coding 🎉🙌
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
