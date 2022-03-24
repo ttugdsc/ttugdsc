@@ -26,11 +26,4 @@ const Home: NextPage = () => {
     </>
   );
 };
-{
-  /*
-TODOs
-Add footer
-Make Text banner look nicer for tablet and mobile
-*/
-}
 export default Home;
