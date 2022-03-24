@@ -23,22 +23,22 @@ const Team = () => {
           <TeamMember
             title="GDSC Lead"
             name="Samuel Adetunji"
-            link="https://i.ibb.co/xMwg6D6/samuel.jpg"
+            link="https://media-exp1.licdn.com/dms/image/C4E03AQFA4qZDyN1hsA/profile-displayphoto-shrink_400_400/0/1642438096694?e=2147483647&v=beta&t=oNBgN4xJrxK8caXc1OitCNJBmtBme05QnySn7T7N7xM"
           />
           <TeamMember
             title="HackWesTX Lead"
             name="Ahmed Bayoumi"
-            link="https://i.ibb.co/GTCjphB/ahmed.jpg"
+            link="https://media-exp1.licdn.com/dms/image/C4E03AQFCZre-_cGGBA/profile-displayphoto-shrink_400_400/0/1573610087349?e=2147483647&v=beta&t=bQVsnyBW5trdqKBuWOHm7uGdHljkRmsmWTFBO-9KTmo"
           />
           <TeamMember
             title="Finance Lead"
             name="Garret Carmouche"
-            link="https://i.ibb.co/yQ2C6sv/garret.png"
+            link="https://media-exp1.licdn.com/dms/image/C4E03AQFlLuF0duOgEw/profile-displayphoto-shrink_400_400/0/1568575754744?e=1653523200&v=beta&t=OoS57nBquyCAxhwdYCqQ_Q8jhx2-BmWF5oh0cRPz-NY"
           />
           <TeamMember
             title="Marketing Lead"
             name="Minoshun Renganathan"
-            link="https://media-exp1.licdn.com/dms/image/D4E35AQGJrrqFZ8CWyw/profile-framedphoto-shrink_800_800/0/1628579565830?e=1648004400&v=beta&t=oKmhoOy1L6cSsdeRzKw2I4JGjumVNhVrTUhvs-WnjOw"
+            link="https://media-exp1.licdn.com/dms/image/D4E35AQGJrrqFZ8CWyw/profile-framedphoto-shrink_400_400/0/1628579565830?e=1648184400&v=beta&t=EhOiad-VrolluZLlQAOEf4mzbOvXn2txjsCwoeAdED8"
           />
           <TeamMember
             title="Event Planning Lead"
@@ -48,12 +48,12 @@ const Team = () => {
           <TeamMember
             title="Project Lead"
             name="Sahil Shamdasani"
-            link="https://i.ibb.co/NCw0XzM/sahil.jpg"
+            link="https://media-exp1.licdn.com/dms/image/C4E03AQHs4HFWwEsx9w/profile-displayphoto-shrink_800_800/0/1645944953802?e=1653523200&v=beta&t=TuvCGfjnnIbfxkaJHGDbOlc5w5r0tLbsVVDXd53PPTU"
           />
           <TeamMember
             title="Code the Shift - Founder"
             name="Shruti Nagawekar"
-            link="https://i.ibb.co/RhWL7yY/shruti.jpg"
+            link="https://media-exp1.licdn.com/dms/image/C4E03AQGpnvlIAPjG_w/profile-displayphoto-shrink_800_800/0/1638852604020?e=2147483647&v=beta&t=KHqK_l4ZjD4bLLntv7zodY_KJb3EgAhikI_Ewr7Fcjg"
           />
         </Grid>
       </Grid>

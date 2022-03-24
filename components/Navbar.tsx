@@ -22,7 +22,7 @@ const Navbar = () => {
   const [page, setPage] = useState(0); //Track current page
   const router = useRouter();
 
-  //Updates page number
+  //Updates on click and reroutes
   const handleChange = (event: React.SyntheticEvent, newPage: number) => {
     event.preventDefault();
     setPage(newPage);
@@ -31,7 +31,7 @@ const Navbar = () => {
     if (newPage === 2) router.push("/events");
   };
 
-  //Updates page number on initial page load and whenever we change the pathname (redundant)
+  //Updates page number on initial page load
   useEffect(() => {
     if (router.pathname == "/") setPage(0);
     if (router.pathname == "/projects") setPage(1);
