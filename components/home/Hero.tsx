@@ -1,27 +1,18 @@
 import Students from "../../assets/images/smiling.jpg";
-import {
-  Typography,
-  Button,
-  useMediaQuery,
-  Stack,
-  Container,
-} from "@mui/material";
+import { Typography, Button, Stack } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
 
 const Hero = () => {
   return (
-    <Grid
-      container
+    <Stack
       direction={{ xs: "column-reverse", md: "row" }}
       justifyContent="space-around"
-      xs={12}
     >
-      <Grid container xs={12}>
+      <Grid container>
         <Stack direction={{ xs: "column", md: "row" }}>
           <Grid
             container
-            xs={12}
             sx={{
               p: 8,
               justifyContent: {
@@ -59,7 +50,7 @@ const Hero = () => {
           </Grid>
         </Stack>
       </Grid>
-    </Grid>
+    </Stack>
   );
 };
 export default Hero;
