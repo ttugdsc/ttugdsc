@@ -9,11 +9,22 @@ export interface Props {
   linkedIn: string;
   icon?: React.ReactNode;
 }
-
+/*
+I pass this single TeamMember card the above arguments and assign their expected types
+Then I fill in everything else
+*/
 const TeamMember = (props: Props) => {
   return (
     <Grid item m={3}>
-      <Card elevation={3}>
+      <Card
+        elevation={3}
+        sx={{
+          ":hover": {
+            //More shadow on hover
+            boxShadow: 9,
+          },
+        }}
+      >
         <Link href={props.linkedIn} passHref>
           <CardMedia
             component="img"

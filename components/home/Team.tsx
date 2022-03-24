@@ -1,8 +1,9 @@
-import { Typography, Grid, Paper } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 import TeamMember from "../../components/home/TeamMember";
 
 const Team = () => {
   return (
+    //Pass individual officer info into each TeamMember component for rendering
     <Grid container maxHeight="30%" mb={5}>
       <Grid container m={3} justifyContent="space-around">
         <Typography variant="h4">Our Core Team</Typography>

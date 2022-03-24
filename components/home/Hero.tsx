@@ -4,6 +4,8 @@ import Grid from "@mui/material/Grid";
 import Image from "next/image";
 
 const Hero = () => {
+  //Prolly a redundant Stack/Grid or 2 here
+  //Similar to the Socials section
   return (
     <Stack
       direction={{ xs: "column-reverse", md: "row" }}

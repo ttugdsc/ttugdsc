@@ -4,7 +4,7 @@ import { Grid, Typography, useTheme } from "@mui/material";
 const Footer = () => {
   const theme = useTheme();
 
-  return useMediaQuery(theme.breakpoints.up("md")) ? (
+  return useMediaQuery(theme.breakpoints.up("md")) ? ( //Only shows when the screen is large enough
     <Grid container height="10%" width={"100%"} justifyContent="center" my={3}>
       <Typography textAlign="center" fontStyle={{ opacity: "50%" }}>
         Made with

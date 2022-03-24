@@ -9,7 +9,7 @@ export interface Props {
 }
 
 const SocialButton = (props: Props) => {
-  //Telling TS that my passed props are expected to be 2 strings
+  //Telling TS that my passed props are expected to be 2 strings, maybe a react node, and maybe a boolean
   return (
     <Button
       variant="contained"

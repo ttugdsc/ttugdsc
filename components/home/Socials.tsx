@@ -4,11 +4,10 @@ import SocialButton from "../home/SocialButton";
 import SchoolIcon from "@mui/icons-material/School";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ForumIcon from "@mui/icons-material/Forum";
-import { Typography } from "@mui/material";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
+import { Typography, Grid, Paper } from "@mui/material";
 
 const Socials = () => {
+  //Just two columns that colapse on smaller screens
   return (
     <Paper elevation={2}>
       <Grid
