@@ -13,7 +13,7 @@ export interface Props {
 const TeamMember = (props: Props) => {
   return (
     <Grid item m={3}>
-      <Card>
+      <Card elevation={3}>
         <Link href={props.linkedIn} passHref>
           <CardMedia
             component="img"

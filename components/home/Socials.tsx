@@ -1,6 +1,6 @@
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import SocialButton from "../components/SocialButton";
+import SocialButton from "../home/SocialButton";
 import SchoolIcon from "@mui/icons-material/School";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ForumIcon from "@mui/icons-material/Forum";

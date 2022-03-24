@@ -1,4 +1,4 @@
-import Students from "../assets/images/smiling.jpg";
+import Students from "../../assets/images/smiling.jpg";
 import {
   Typography,
   Button,

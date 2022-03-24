@@ -1,11 +1,12 @@
-import Socials from "../components/Socials";
 import Grid from "@mui/material/Grid";
 import type { NextPage } from "next";
 import Head from "next/head";
 
+import Socials from "../components/home/Socials";
 import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Team from "../components/Team";
+import Hero from "../components/home/Hero";
+import Team from "../components/home/Team";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
         <Hero />
         <Socials />
         <Team />
+        <Footer />
       </Grid>
     </>
   );
@@ -27,10 +29,8 @@ const Home: NextPage = () => {
 {
   /*
 TODOs
-Organize components by page
 Add footer
 Make Text banner look nicer for tablet and mobile
-Figure out button overlap bug on mobile
 */
 }
 export default Home;
