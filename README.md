@@ -9,10 +9,9 @@ If you want to contribute, follow [our guidelines](https://github.com/ttugdsc/tt
 
 For a breakdown on what we're shooting for, check out our [project page](https://www.figma.com/file/uEBOlD2GGmVO0sCAKTowAh/Lo-fi-Wireframe-Kit-Launchpad-for-Website-Wireframe) and our [discussion page](https://github.com/ttugdsc/ttugdsc/discussions).
 
-
 ## Getting Started
 
-First, install the dependencies 
+First, install the dependencies
 
 ```bash
 # clone the repository

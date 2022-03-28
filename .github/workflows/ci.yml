@@ -5,13 +5,12 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   Checks:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,20 +19,20 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3.0.0
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3.0.0
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - name: Run linter 👀
-      run: npm run lint
-    - run: npm run build --if-present
-    - name: Cache node_modules 📦
-    - uses: actions/cache@v3.0.0
-      with:
-       path: ~/.npm
-       key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-       restore-keys: |
-         ${{ runner.os }}-node-
+      - uses: actions/checkout@v3.0.0
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3.0.0
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - run: npm ci
+      - name: Run linter 👀
+        run: npm run lint
+      - run: npm run build --if-present
+      - name: Cache node_modules 📦
+      - uses: actions/cache@v3.0.0
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
