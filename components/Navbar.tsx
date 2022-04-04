@@ -57,23 +57,31 @@ const Navbar = () => {
             direction="column"
             sx={{ width: "100%", bgcolor: "background.paper" }}
           >
-            <Container maxWidth="xs">
+            <Grid item sx={{ width: "90px", mx: "auto" }}>
               <Image src={Logo} alt="Google Developer Student Club logo" />
-            </Container>
-            <TopTab
-              value={page}
-              onChange={handleChange}
-              centered
-              variant="fullWidth"
-            >
-              <Tab label="Home" />
-              <Tab label="Projects" />
-              <Tab label="Events" />
-            </TopTab>
+            </Grid>
+            <Grid item xs={12}>
+              <TopTab
+                value={page}
+                onChange={handleChange}
+                centered
+                variant="fullWidth"
+              >
+                <Tab label="Home" />
+                <Tab label="Projects" />
+                <Tab label="Events" />
+              </TopTab>
+            </Grid>
           </Grid>
         ) : (
           <Paper
-            sx={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 2500 }}
+            sx={{
+              position: "fixed",
+              bottom: 0,
+              left: 0,
+              right: 0,
+              zIndex: 2500,
+            }}
             elevation={3}
           >
             <BottomNavigation showLabels value={page} onChange={handleChange}>
