@@ -7,6 +7,7 @@ import {
   BottomNavigationAction,
   Tabs,
   Tab,
+  CssBaseline,
 } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { styled, useTheme } from "@mui/material/styles";
@@ -47,6 +48,7 @@ const Navbar = () => {
 
   return (
     <>
+      <CssBaseline />
       {
         //If user is on bigger screen, render desktop view, else render mobile.
         useMediaQuery(theme.breakpoints.up("md")) ? (
@@ -71,7 +73,7 @@ const Navbar = () => {
           </Grid>
         ) : (
           <Paper
-            sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
+            sx={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 2500 }}
             elevation={3}
           >
             <BottomNavigation showLabels value={page} onChange={handleChange}>

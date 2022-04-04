@@ -30,7 +30,7 @@ const Team = () => {
         <TeamMember
           title="Marketing Lead"
           name="Minoshun Renganathan"
-          link="https://media-exp1.licdn.com/dms/image/D4E35AQGJrrqFZ8CWyw/profile-framedphoto-shrink_400_400/0/1628579565830?e=1648184400&v=beta&t=EhOiad-VrolluZLlQAOEf4mzbOvXn2txjsCwoeAdED8"
+          link="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_face,h_100,q_auto:good,w_130/v1/gcs/platform-data-dsc/avatars/minoshun_renganathan_QQIumau.jpeg"
           linkedIn="https://www.linkedin.com/in/minoshun-renganathan/"
         />
         <TeamMember
