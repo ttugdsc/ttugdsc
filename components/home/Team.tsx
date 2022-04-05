@@ -8,7 +8,7 @@ const Team = () => {
       <Grid container m={3} justifyContent="space-around">
         <Typography variant="h4">Our Core Team</Typography>
       </Grid>
-      <Grid container direction="row" justifyContent="space-evenly" md={12}>
+      <Grid container direction="row" justifyContent="space-evenly">
         <TeamMember
           title="GDSC Lead"
           name="Samuel Adetunji"
