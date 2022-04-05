@@ -1,7 +1,10 @@
+import { Grid, Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Hero from "../components/projects/Hero";
+import ProjectTable from "../components/projects/ProjectTable";
+
 const Projects: NextPage = () => {
   return (
     <>
@@ -11,6 +14,22 @@ const Projects: NextPage = () => {
       </Head>
       <Navbar />
       <Hero />
+      <Grid container sx={{ my: 4 }}>
+        <Grid item xs={3}>
+          <Typography variant="h5" align="center" sx={{ m: 3 }}>
+            Texas Tech Developer Student Club Projects
+          </Typography>
+          <Typography variant="body1" sx={{ m: 3 }}>
+            Projects are meant to be a way for participants and onlookers alike
+            to learn how to build in a low risk environment. The goal at the end
+            of one of our projects is that you&apos;ll leave equipped and able
+            to build with the tool we used.
+          </Typography>
+        </Grid>
+        <Grid item xs={8} sx={{ minHeight: "400px", m: 4 }}>
+          <ProjectTable />
+        </Grid>
+      </Grid>
     </>
   );
 };

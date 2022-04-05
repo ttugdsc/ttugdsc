@@ -23,13 +23,13 @@ const Hero = () => {
           <Typography align="center" variant="h6">
             Texas Tech Developer Student Club Mission
           </Typography>
-          <Typography align="center" variant="body1">
+          <Typography variant="body1">
             The purpose of the Texas Tech Google Developer Student Club is to
             make technology more accessible and we do that by hosting workshops,
             code-alongs, and speaker events! We also organize open source
             projects for members to participate in.
           </Typography>
-          <Typography align="center" variant="body1">
+          <Typography variant="body1">
             The goal is to bridge the gap between theory and application by
             gaining real-life experience, building projects to help the
             community, and making students ready for taking the first step into
