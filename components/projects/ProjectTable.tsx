@@ -5,7 +5,9 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import Paper from "@mui/material/Paper";
+import SocialButton from "../home/SocialButton";
 
 function createData(
   project: string,
@@ -24,13 +26,14 @@ const rows = [
     "https://github.com/ttugdsc/ttugdsc",
     new Date("2022-07-19"),
     "In Progess"
-  ), createData(
+  ),
+  createData(
     "HackWesTX Hackathon Website",
     "HackWesTX",
     "https://github.com/ttugdsc/HackWesTX-Official-Repo",
     new Date("2022-02-24"),
     "Complete"
-  )
+  ),
 ];
 
 const ProjectTable = () => {
@@ -56,8 +59,17 @@ const ProjectTable = () => {
                 {row.project}
               </TableCell>
               <TableCell align="right">{row.client}</TableCell>
-              <TableCell align="right">{row.repo}</TableCell>
-              <TableCell align="right">{row.dateStarted.toDateString()}</TableCell>
+              <TableCell align="right">
+                <SocialButton
+                  variant="text"
+                  link={row.repo}
+                  label="Github"
+                  icon={<GitHubIcon />}
+                />
+              </TableCell>
+              <TableCell align="right">
+                {row.dateStarted.toDateString()}
+              </TableCell>
               <TableCell align="right">{row.status}</TableCell>
             </TableRow>
           ))}
