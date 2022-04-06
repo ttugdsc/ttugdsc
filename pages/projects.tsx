@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
@@ -26,9 +26,24 @@ const Projects: NextPage = () => {
             to build with the tool we used.
           </Typography>
         </Grid>
-        <Grid item xs={8} sx={{ minHeight: "400px", m: 4 }}>
+        <Grid item xs={8} sx={{ minHeight: "200px", m: 4 }}>
           <ProjectTable />
         </Grid>
+      </Grid>
+      <Grid
+        container
+        sx={{ width: "35%", mx: "auto", mb: 8, justifyContent: "center" }}
+      >
+        <Button
+          variant="outlined"
+          onClick={() => {
+            alert(
+              "Lmao sorry slime, we don't haven't implemented this bit yet 😶‍🌫️"
+            );
+          }}
+        >
+          Request Project
+        </Button>
       </Grid>
     </>
   );
