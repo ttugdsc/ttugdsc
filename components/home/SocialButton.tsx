@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 export interface Props {
   //Defining types
   link: string;
-  variant?: string;
+  variant?: boolean;
   label: string;
   icon?: React.ReactNode;
   Discord?: boolean;
@@ -13,7 +13,7 @@ const SocialButton = (props: Props) => {
   //Telling TS that my passed props are expected to be 2 strings, maybe a react node, and maybe a boolean
   return (
     <Button
-      variant={props.variant ? props.variant : "contained"}
+      variant={props.variant ? "text" : "contained"}
       sx={{ width: "80%", mt: 1 }}
       href={props.link}
       startIcon={props.icon}

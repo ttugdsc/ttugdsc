@@ -66,7 +66,7 @@ const ProjectTable = () => {
               <TableCell align="right">
                 <SocialButton
                   // Main note being that we can add whatever react node we want
-                  variant="text"
+                  variant
                   link={row.repo}
                   label="Github"
                   icon={<GitHubIcon />}
