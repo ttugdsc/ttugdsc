@@ -42,7 +42,7 @@ const Team = () => {
         <TeamMember
           title="Project Lead"
           name="Sahil Shamdasani"
-          link="https://media-exp1.licdn.com/dms/image/C4E03AQHs4HFWwEsx9w/profile-displayphoto-shrink_800_800/0/1645944953802?e=1653523200&v=beta&t=TuvCGfjnnIbfxkaJHGDbOlc5w5r0tLbsVVDXd53PPTU"
+          link="https://media-exp1.licdn.com/dms/image/C4E03AQHIYT6y4EThfg/profile-displayphoto-shrink_800_800/0/1649251643207?e=1654732800&v=beta&t=udTvpF3QODzidzXXsSgcYSyybeeBd2mwsIfqXIGeFGs"
           linkedIn="https://www.linkedin.com/in/sahil-shamdasani/"
         />
         <TeamMember
