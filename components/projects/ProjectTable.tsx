@@ -9,18 +9,21 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import Paper from "@mui/material/Paper";
 import SocialButton from "../home/SocialButton";
 
-function createData(
+function createData( //Helper function for filling up the table
   project: string,
   client: string,
   repo: string,
   dateStarted: Date,
   status: string
 ) {
+  // Gives us easy access to these properties
   return { project, client, repo, dateStarted, status };
 }
 
 const rows = [
+  // Later we'll prolly pull these from a database, for now they're hardcoded
   createData(
+    // Peep how we're using the helper function
     "TTUGDSC Website",
     "TTUGDSC",
     "https://github.com/ttugdsc/ttugdsc",
@@ -38,6 +41,7 @@ const rows = [
 
 const ProjectTable = () => {
   return (
+    // Table stuff copied from MUI docs and tweaked -> https://mui.com/components/tables/#basic-table
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 400 }} aria-label="simple table">
         <TableHead>
@@ -61,6 +65,7 @@ const ProjectTable = () => {
               <TableCell align="right">{row.client}</TableCell>
               <TableCell align="right">
                 <SocialButton
+                  // Main note being that we can add whatever react node we want
                   variant="text"
                   link={row.repo}
                   label="Github"
