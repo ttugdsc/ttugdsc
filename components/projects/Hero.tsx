@@ -6,8 +6,8 @@ import { Box } from "@mui/system";
 const Hero = () => {
   return (
     <Grid container>
-      <Grid item xs={6}>
-        <Box sx={{ mx: "auto", my: 3, pl: 2 }}>
+      <Grid item xs={12} lg={6}>
+        <Box sx={{ mx: "auto", my: 3, pl: 2, justifyContent: "center" }}>
           <iframe
             width="720"
             height="405"
@@ -18,8 +18,8 @@ const Hero = () => {
           ></iframe>
         </Box>
       </Grid>
-      <Grid item xs={6}>
-        <Stack direction="column" sx={{ mx: 18, mt: 4 }} spacing={4}>
+      <Grid item xs={12} lg={6}>
+        <Stack direction="column" spacing={4} sx={{ py: 5, px: 10 }}>
           <Typography align="center" variant="h6">
             Texas Tech Developer Student Club Mission
           </Typography>

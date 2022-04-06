@@ -15,7 +15,7 @@ const Projects: NextPage = () => {
       <Navbar />
       <Hero />
       <Grid container sx={{ my: 4 }}>
-        <Grid item xs={3}>
+        <Grid item xs={12} md={3}>
           <Typography variant="h5" align="center" sx={{ m: 3 }}>
             Texas Tech Developer Student Club Projects
           </Typography>
@@ -26,7 +26,7 @@ const Projects: NextPage = () => {
             to build with the tool we used.
           </Typography>
         </Grid>
-        <Grid item xs={8} sx={{ minHeight: "200px", m: 4 }}>
+        <Grid item xs={12} md={8} sx={{ minHeight: "200px", m: 4 }}>
           <ProjectTable />
         </Grid>
       </Grid>
