@@ -34,7 +34,7 @@ const EventCard = (props: Event) => {
           >
             {props.body}
           </Typography>
-          <Typography variant="subtitle1">{props.venue}</Typography>
+          <Typography variant="overline">{props.venue}</Typography>
         </CardContent>
       </Card>
     </Grid>
