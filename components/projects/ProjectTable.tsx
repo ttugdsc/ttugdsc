@@ -24,10 +24,18 @@ const rows = [
   // Later we'll prolly pull these from a database, for now they're hardcoded
   createData(
     // Peep how we're using the helper function
+    "RaiderRide Revamp",
+    "TTU Transportation",
+    "https://github.com/ttugdsc/raiderride-FUBU",
+    new Date("2022-04-18"),
+    "In Progess"
+  ),
+  createData(
+    // Peep how we're using the helper function
     "TTUGDSC Website",
     "TTUGDSC",
     "https://github.com/ttugdsc/ttugdsc",
-    new Date("2022-07-19"),
+    new Date("2021-07-19"),
     "In Progess"
   ),
   createData(
@@ -42,8 +50,8 @@ const rows = [
 const ProjectTable = () => {
   return (
     // Table stuff copied from MUI docs and tweaked -> https://mui.com/components/tables/#basic-table
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 400 }} aria-label="simple table">
+    <TableContainer sx={{ maxHeight: 450 }} component={Paper}>
+      <Table aria-label="simple table">
         <TableHead>
           <TableRow>
             <TableCell>Project Name</TableCell>
