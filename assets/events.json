@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Python Automation Workshop",
+    "body": "Our first workshop of the Spring 2022 semester was an exciting guide on Automation with Python. Shout out to our Project Lead Sahil Shamdasani who lead the event.",
+    "date": "new Date(2022, 4, 14, 18, 30)",
+    "venue": "Electric and Computer Engineering, Room 217"
+  },
+  {
+    "title": "General Meeting",
+    "body": "the TTU Google Developer Student Club will be holding an awesome general meeting tonight at Livermore Center Room 101 - 6:30pm. It'll be brief but packed with a ton of info for what we're doing this semester. Definitely gonna be a cool time, there will be food and music. Come through for hella vibes but mostly to learn what the org has to offer you!",
+    "date": "new Date(2022, 4, 1, 18, 30)",
+    "venue": "Livermore Center, Room 101"
+  },
+  {
+    "title": "HackWesTX 2022",
+    "body": "The TTU Student-run Hackathon is back this year! www.hackwestx.tech/ for more info, registration is open!",
+    "date": "new Date(2022, 2, 26, 8, 00)",
+    "venue": "Innovation Hub | 3911 4th Street"
+  },
+  {
+    "title": "Hackathons 101",
+    "body": "RaiderHacks meets Developer Student Club!! Your chance to prep for the upcoming HackWesTX, get some tips from RaiderHacks, and learn a bit more about HackWesTX",
+    "date": "new Date(2022, 2, 25, 18, 30)",
+    "venue": "Livermore Center, Room 101"
+  },
+  {
+    "title": "Intern Panel + Resume Critique",
+    "body": "Learn from our friends of Alpha Omega Epsilon and Raider Hacks. Your chance to get a peek into the internship process before the job fair! *There'll be food this time*",
+    "date": "new Date(2022, 2, 11, 18, 30)",
+    "venue": "Livermore Center, Room 101"
+  },
+  {
+    "title": "Q&A with Tech",
+    "body": "Everyone's welcome, come join us for a Q&A with a few fellow Red Raiders from a couple companies you may have heard of! Food and drinks will be provided, and it will take place on January 27th at 6pm in the Mechanical Engineering North building room 132.",
+    "date": "new Date(2022, 1, 27, 18, 00)",
+    "venue": "Mechanical Engineering North, Room 132"
+  }
+]
