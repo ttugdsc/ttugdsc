@@ -4,16 +4,10 @@ import Head from "next/head";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import { Button, Grid, Paper, Stack, Typography } from "@mui/material";
 import { MyLocationOutlined } from "@mui/icons-material";
-import events from "../assets/events.json";
+import events from "../assets/data/events.json";
 import EventCard from "../components/events/Event";
 import { useEffect } from "react";
-
-type Event = {
-  title: string;
-  body: string;
-  date: Date;
-  venue: string;
-};
+import Footer from "../components/Footer";
 
 var eventList = [
   // Later we'll prolly pull these from a database, for now they're hardcoded
@@ -48,6 +42,7 @@ const Events: NextPage = () => {
       >
         <Grid item xs={5} sx={{ py: 3 }}>
           <Stack direction="column" spacing={4} sx={{ px: 3, mx: "auto" }}>
+            {/* Featured event is always the most recent */}
             <Typography variant="h5">Featured</Typography>
             <Typography variant="h4">{eventList[0].title}</Typography>
             <Typography variant="body1">{eventList[0].body}</Typography>
@@ -95,6 +90,7 @@ const Events: NextPage = () => {
           </Grid>
         ))}
       </Grid>
+      <Footer />
     </>
   );
 };

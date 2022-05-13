@@ -1,6 +1,7 @@
 import { Button, Grid, Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Hero from "../components/projects/Hero";
 import ProjectTable from "../components/projects/ProjectTable";
@@ -45,6 +46,7 @@ const Projects: NextPage = () => {
           Request Project
         </Button>
       </Grid>
+      <Footer />
     </>
   );
 };

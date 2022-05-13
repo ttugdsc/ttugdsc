@@ -20,6 +20,8 @@ a {
   max-width: 8rem;
 }
 
+/* Only changes here are for the scroll bar but we don't use it*/
+
 *::-webkit-scrollbar {
   width: "0.4em";
 }

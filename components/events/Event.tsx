@@ -1,12 +1,10 @@
 import {
-  Box,
   Card,
   CardContent,
   CardHeader,
   Grid,
   Typography,
 } from "@mui/material";
-import { createTheme, Theme, ThemeProvider } from "@mui/system";
 
 type Event = {
   title: string;
@@ -16,6 +14,7 @@ type Event = {
 };
 
 const EventCard = (props: Event) => {
+  //Convert the date string into a usable date
   const useableDate = new Date(props.date);
   return (
     <Grid container sx={{ mt: 3, px: 3 }}>
