@@ -5,6 +5,8 @@ import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import { Button, Grid, Paper, Stack, Typography } from "@mui/material";
 import { MyLocationOutlined } from "@mui/icons-material";
 import events from "../assets/events.json";
+import EventCard from "../components/events/Event";
+import { useEffect } from "react";
 
 type Event = {
   title: string;
@@ -13,12 +15,24 @@ type Event = {
   venue: string;
 };
 
-const rows = [
+var eventList = [
   // Later we'll prolly pull these from a database, for now they're hardcoded
   ...events,
 ];
 
 const Events: NextPage = () => {
+  useEffect(() => {
+    let newList = [...eventList];
+    newList.forEach((current) => {
+      current = {
+        title: current.title,
+        body: current.body,
+        date: new Date(current.date).toLocaleString("cst"),
+        venue: current.venue,
+      };
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -35,8 +49,8 @@ const Events: NextPage = () => {
         <Grid item xs={5} sx={{ py: 3 }}>
           <Stack direction="column" spacing={4} sx={{ px: 3, mx: "auto" }}>
             <Typography variant="h5">Featured</Typography>
-            <Typography variant="h4">{rows[0].title}</Typography>
-            <Typography variant="body1">{rows[0].body}</Typography>
+            <Typography variant="h4">{eventList[0].title}</Typography>
+            <Typography variant="body1">{eventList[0].body}</Typography>
             <Button variant="contained">Learn More</Button>
           </Stack>
         </Grid>
@@ -50,9 +64,7 @@ const Events: NextPage = () => {
               direction="row"
             >
               <CalendarTodayIcon sx={{ mr: 1 }} />
-              <Typography variant="body1">
-                {eval("(" + rows[0].date + ")").toDateString()}
-              </Typography>
+              <Typography variant="body1">{eventList[0].date}</Typography>
             </Stack>
             <Stack
               sx={{ border: "gray" }}
@@ -61,10 +73,27 @@ const Events: NextPage = () => {
               direction="row"
             >
               <MyLocationOutlined sx={{ mr: 1 }} />
-              <Typography variant="body1">{rows[0].venue}</Typography>
+              <Typography variant="body1">{eventList[0].venue}</Typography>
             </Stack>
           </Stack>
         </Grid>
+      </Grid>
+      <Grid container sx={{ mt: 3, px: 3, justifyContent: "stretch" }}>
+        {eventList.slice(1).map((current) => (
+          <Grid
+            item
+            key={current.title}
+            xs={4}
+            sx={{ width: "90%" }}
+          >
+            <EventCard
+              title={current.title}
+              body={current.body}
+              date={current.date}
+              venue={current.venue}
+            />
+          </Grid>
+        ))}
       </Grid>
     </>
   );

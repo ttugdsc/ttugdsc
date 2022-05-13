@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 
-export interface Props {
+interface Props {
   //Defining types
   link: string;
   variant?: boolean;
