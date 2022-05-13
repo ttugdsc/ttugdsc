@@ -50,8 +50,8 @@ const rows = [
 const ProjectTable = () => {
   return (
     // Table stuff copied from MUI docs and tweaked -> https://mui.com/components/tables/#basic-table
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 400 }} aria-label="simple table">
+    <TableContainer sx={{ maxHeight: 450 }} component={Paper}>
+      <Table aria-label="simple table">
         <TableHead>
           <TableRow>
             <TableCell>Project Name</TableCell>
